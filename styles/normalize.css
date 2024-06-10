@@ -1,9 +1,7 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 /*
@@ -13,7 +11,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
 }
 /*
   Typographic tweaks!
@@ -56,13 +54,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-/*
-  8. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
-}
+
 
 a {
   text-decoration: none;

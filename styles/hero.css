@@ -1,5 +1,10 @@
 #hero {
   padding: 5rem 0 12.25rem;
+  background-color: var(--c3);
+}
+
+#hero .content-limit {
+  max-width: 1600px;
 }
 .hero-content {
   max-width: 52.625rem;
@@ -10,7 +15,7 @@
   color: var(--e1);
   font-size: 1.25rem;
   max-width: 37.3125rem;
-  margin: 2rem   auto;
+  margin: 2rem auto;
   text-align: center;
 }
 
@@ -19,14 +24,22 @@
 }
 
 .img1-content {
-  width: 19.9375rem; 
-  height: 14.375rem; 
-  overflow: hidden; 
-  border-radius: 6.25rem;
-  margin-top:  -8.8125rem;
+  width: 19.9375rem;
+  margin-top: -8.8125rem;
 }
 
-.img1-content img {
-    object-fit: cover;
-    object-position: center -4.5625rem;
+.img2-content {
+  width: 14.4375rem;
+  margin: 20px 0px 0 400px;
+}
+
+.img3-content {
+  float: right;
+  margin: -270px 340px;
+}
+
+.img4-content {
+  border-radius: 6.25rem 0 0 6.25rem;
+  float: right;
+  margin-top: -500px;
 }
