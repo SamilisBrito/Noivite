@@ -1,0 +1,59 @@
+:root {
+  --c1: #ecc9a3;
+  --c2: #fdecd2;
+  --c3: #faf2e6;
+  --v1: #8fb27c;
+  --v2: #bbcf9a;
+  --e1: #709a94;
+  --e2: #a0bcae;
+  --f1: #235560;
+}
+
+* {
+  color: var(--f1);
+  font-family: "Poppins", sans-serif;
+}
+
+main, footer {
+  padding: 1.25rem;
+}
+
+main {
+  padding-top: 6.25rem;
+  background-color: var(--c3);
+}
+
+.logo,
+h1,
+h2,
+h3 {
+  font-family: "Literata", serif;
+}
+
+h1, h2 {
+  line-height: 3.75rem;
+  font-size: 3.125rem;
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.dot {
+  color: var(--v1);
+}
+
+.button {
+  padding: 1rem 2rem;
+  background-color: var(--e1);
+  color: var(--c3);
+  border-radius: 1.875rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
