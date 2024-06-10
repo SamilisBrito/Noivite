@@ -1,0 +1,32 @@
+#hero {
+  padding: 5rem 0 12.25rem;
+}
+.hero-content {
+  max-width: 52.625rem;
+  margin: 0 auto;
+}
+
+.hero-content > p {
+  color: var(--e1);
+  font-size: 1.25rem;
+  max-width: 37.3125rem;
+  margin: 2rem   auto;
+  text-align: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.img1-content {
+  width: 19.9375rem; 
+  height: 14.375rem; 
+  overflow: hidden; 
+  border-radius: 6.25rem;
+  margin-top:  -8.8125rem;
+}
+
+.img1-content img {
+    object-fit: cover;
+    object-position: center -4.5625rem;
+}
