@@ -1,0 +1,23 @@
+header {
+  background-color: var(--c2);
+  padding: 1.125rem 0 1.125rem 1.125rem;
+  position: fixed;
+  width: 100%;
+}
+
+header li {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.nav-list li {
+  margin: 1.25rem;
+}
+.nav {
+  float: right;
+  height: 70px;
+}
+.nav-list li:hover {
+  border-bottom: 2px solid var(--v1);
+}
+
