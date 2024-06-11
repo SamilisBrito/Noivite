@@ -1,6 +1,6 @@
 #about {
   background-color: var(--c3);
-  background-image: linear-gradient(to left, var(--c2) 60%, var(--c3) 0);
+  background-image: linear-gradient(to left, var(--c2) 50%, var(--c3) 0);
 }
 
 .detail {
@@ -23,6 +23,7 @@
 
 #about h2 {
   margin-bottom: 3.75rem;
+  text-align: left;
 }
 
 #about p {

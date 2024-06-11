@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/services.css" />
     <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
     <title>Noivite.</title>
   </head>
   <body>
@@ -112,88 +113,103 @@
               <a class="button" href="http://">COMECE AGORA</a>
               <div>
                 <div class="img2-2-content">
-                  <img src="./img/decoracao3.png" alt="recém casados se beijando" />
+                  <img
+                    src="./img/decoracao3.png"
+                    alt="recém casados se beijando"
+                  />
                 </div>
                 <div class="img4-2-content">
                   <img src="./img/decoracao4.png" alt="recém casados" />
                 </div>
                 <div class="img3-2-content">
-                  <img src="./img/decoracao2.png" alt="recém casados de mãos dada" />
+                  <img
+                    src="./img/decoracao2.png"
+                    alt="recém casados de mãos dada"
+                  />
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
-      <section>
-        <div class="content-limit">
-          <h2>nosso contato<span class="dot">.</span></h2>
-          <div>
-            <h3>Loja Online</h3>
-            <ul>
-              <li>
-                <i data-feather="map-pin"></i>
-                <ul>
-                  <li>
-                    <p>Rua Ali Perto, 35 Láctea</p>
-                  </li>
-                  <li>
-                    <p>Rio de Janeiro - RJ</p>
-                  </li>
-                  <li>
-                    <p>Brasil - Terra - Vita</p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <i data-feather="mail"></i>
-                <ul>
-                  <li>
-                    <p>contato@noivite.com</p>
-                  </li>
-                  <li>
-                    <p>suporte@noivite.com</p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <i data-feather="phone"></i>
-                <p>+55 91 9999-9999</p>
-              </li>
-            </ul>
-            <ul>
-              <li><i data-feather="instagram"></i></li>
-              <li><i data-feather="facebook"></i></li>
-              <li><i data-feather="youtube"></i></li>
-            </ul>
+      <section id="contact">
+        <div class="container-contact">
+          <!-- <h2>nosso contato<span class="dot">.</span></h2> -->
+          <div class="content-support inline">
+            <div class="content-support-ul">
+              <h3>Suporte Online</h3>
+              <ul>
+                <li>
+                  <i data-feather="map-pin"></i>
+                  <ul>
+                    <li>
+                      <p>Rua Ali Perto, 35 Láctea</p>
+                    </li>
+                    <li>
+                      <p>Rio de Janeiro - RJ</p>
+                    </li>
+                    <li>
+                      <p>Brasil - Terra - Vita</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <i data-feather="mail"></i>
+                  <ul>
+                    <li>
+                      <p>contato@noivite.com</p>
+                    </li>
+                    <li>
+                      <p>suporte@noivite.com</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <i data-feather="phone"></i>
+                  <p>+55 91 9999-9999</p>
+                </li>
+              </ul>
+              <ul>
+                <li><i data-feather="instagram"></i></li>
+                <li><i data-feather="facebook"></i></li>
+                <li><i data-feather="youtube"></i></li>
+              </ul>
+            </div>
           </div>
 
           <form>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" placeholder="Seu nome" />
-            <label for="phone">Telefone</label>
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="(91) 9999-9999"
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              autocomplete="email"
-              id="email"
-              placeholder="contato@email.com"
-            />
-            <label for="message">Mensagem</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="O que você precisa?"
-            ></textarea>
-            <button type="submit">ENVIAR MENSAGEM</button>
+            <fieldset class="inline">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" placeholder="Seu nome" />
+            </fieldset>
+            <fieldset class="inline">
+              <label for="phone">Telefone</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="(91) 9999-9999"
+              />
+            </fieldset>
+            <fieldset>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                id="email"
+                placeholder="contato@email.com"
+              />
+            </fieldset>
+            <fieldset>
+              <label for="message">Mensagem</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="O que você precisa?"
+              ></textarea>
+            </fieldset>
+            <button class="button" type="submit">ENVIAR MENSAGEM</button>
           </form>
         </div>
       </section>
