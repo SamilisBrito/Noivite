@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="content-limit">
-        <a class="logo inline" href="#hero"
+        <a class="logo inline" href="#"
           >noivite<span class="dot">.</span></a
         >
         <nav class="nav inline">
@@ -149,42 +149,55 @@
                 <div class="inline">
                   <div class="content-support-ul">
                     <h3>Suporte Online</h3>
-                    <ul>
-                      <li>
-                        <i data-feather="map-pin"></i>
-                        <ul>
-                          <li>
-                            <p>Rua Ali Perto, 35 Láctea</p>
-                          </li>
-                          <li>
-                            <p>Rio de Janeiro - RJ</p>
-                          </li>
-                          <li>
-                            <p>Brasil - Terra - Vita</p>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <i data-feather="mail"></i>
-                        <ul>
+
+                    <table id="address-table" title="Endereços">
+                      <tr>
+                        <td>
+                          <i data-feather="map-pin"></i>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>
+                              <p>Rua Ali Perto, 35 Láctea</p>
+                            </li>
+                            <li>
+                              <p>Rio de Janeiro - RJ</p>
+                            </li>
+                            <li>
+                              <p>Brasil - Terra - Vita</p>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i data-feather="mail"></i>
+                        </td>
+                        <td>
                           <li>
                             <p>contato@noivite.com</p>
                           </li>
                           <li>
                             <p>suporte@noivite.com</p>
                           </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <i data-feather="phone"></i>
-                        <p>+55 91 9999-9999</p>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li><i data-feather="instagram"></i></li>
-                      <li><i data-feather="facebook"></i></li>
-                      <li><i data-feather="youtube"></i></li>
-                    </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i data-feather="phone"></i>
+                        </td>
+                        <td>
+                          <p>+55 91 9999-9999</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <div title="Lista de redes sociais" class="social-networking">
+                      <ul>
+                        <li><a href="#"><i data-feather="instagram"></i></a></li>
+                        <li><a href="#"><i data-feather="facebook"></i></a></li>
+                        <li><a href="#"><i data-feather="youtube"></i></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -198,6 +211,7 @@
                       name="name"
                       id="name"
                       placeholder="Seu nome"
+                      required
                     />
                   </fieldset>
                   <fieldset class="inline">
@@ -217,6 +231,7 @@
                       autocomplete="email"
                       id="email"
                       placeholder="contato@email.com"
+                      required
                     />
                   </fieldset>
                   <fieldset>
@@ -225,6 +240,8 @@
                       name="message"
                       id="message"
                       placeholder="O que você precisa?"
+                      rows="4"
+                      required
                     ></textarea>
                   </fieldset>
                   <button class="button" type="submit">ENVIAR MENSAGEM</button>

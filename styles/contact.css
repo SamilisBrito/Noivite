@@ -3,16 +3,19 @@
   margin: 0 auto;
 }
 
+#contact {
+  padding: 7.5rem;
+}
 #contact h2 {
-  /* margin-bottom: 3.75rem; */
+  margin-bottom: 3.75rem;
 }
 
 .content-support {
   height: 100%;
-  /* width: 25rem; */
   background-color: var(--e1);
-  border-radius: 70px 0 0 70px;
-  padding: 6.375rem 4.0625rem;
+  border-radius: 4.375rem 0 0 4.375rem;
+  padding-right: 4.0625rem;
+  padding-left: 4.0625rem;
 }
 
 .container-contact table {
@@ -24,15 +27,14 @@
 }
 
 #contact .content-support-ul {
-  max-width: 209px;
+  max-width: 13.0625rem;
   margin: 0 auto;
 }
 
 #contact .form {
-  /* float: right; */
-  padding: 3.0625rem 2.625rem;
+  padding: 2.5rem 2.625rem;
   border-radius: 0 4.375rem 4.375rem 0;
-  width: 600px;
+  width: 37.5rem;
   border-top: 0.25rem solid;
   border-right: 0.25rem solid;
   border-bottom: 0.25rem solid;
@@ -41,28 +43,72 @@
 
 #contact label {
   color: var(--l1);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
   display: block;
   margin-bottom: 0.25rem;
 }
 
 #contact fieldset {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  border: transparent;
 }
 
 #contact fieldset input {
   width: 100%;
   width: 15.625rem;
-  height: 3.4375rem;
   border-radius: 1rem;
+  border: transparent;
+  padding: 0.625rem;
 }
 
-#contact fieldset #email {
+#contact fieldset #email,
+.teste {
   width: 100%;
 }
 
 #contact textarea {
   width: 100%;
   border-radius: 1rem;
+  border: transparent;
+  padding: 0.625rem;
+  resize: none;
+}
+
+textarea::placeholder,
+#contact input::placeholder {
+  font-size: 0.875rem;
+}
+
+#address-table .feather {
+  font-size: 1.25rem;
+}
+
+#address-table tr td:last-child {
+  padding-left: 0.5rem;
+}
+
+#address-table tr {
+  vertical-align: top;
+  height: 100%;
+}
+
+#address-table tr td {
+  padding-bottom: 1.875rem;
+}
+
+.social-networking {
+  text-align: center;
+}
+
+.social-networking li {
+  padding: 0.3125rem;
+}
+
+.social-networking .feather:hover {
+  stroke: var(--c1);
+}
+
+#contact h3 {
+  margin-bottom: 1.25rem;
 }
