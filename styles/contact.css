@@ -35,9 +35,9 @@
   padding: 2.5rem 2.625rem;
   border-radius: 0 4.375rem 4.375rem 0;
   width: 37.5rem;
-  border-top: 0.25rem solid;
-  border-right: 0.25rem solid;
-  border-bottom: 0.25rem solid;
+  border-top: 0.1875rem solid;
+  border-right: 0.1875rem solid;
+  border-bottom: 0.1875rem solid;
   border-color: var(--c3);
 }
 

@@ -4,11 +4,17 @@
 }
 
 #hero .content-limit {
-  max-width: 1600px;
+  max-width: 100rem;
 }
+
 .hero-content {
   max-width: 52.625rem;
   margin: 0 auto;
+}
+
+.hero-content,
+.hero-content > p {
+  text-align: center;
 }
 
 .hero-content > p {
@@ -16,30 +22,31 @@
   font-size: 1.25rem;
   max-width: 37.3125rem;
   margin: 2rem auto;
-  text-align: center;
 }
 
-.hero-content {
-  text-align: center;
+.img1,
+.img2,
+.img3,
+.img4 {
+  overflow: hidden;
+  border-radius: 6.25rem;
 }
 
-.img1-content {
-  width: 19.9375rem;
+.img1 {
   margin-top: -8.8125rem;
 }
 
-.img2-content {
-  width: 14.4375rem;
-  margin: 20px 0px 0 400px;
+.img2 {
+  margin: 1.25rem 0rem 0 25rem;
 }
 
-.img3-content {
+.img3 {
   float: right;
-  margin: -270px 340px;
+  margin: -16.875rem 21.25rem;
 }
 
-.img4-content {
+.img4 {
   border-radius: 6.25rem 0 0 6.25rem;
   float: right;
-  margin-top: -500px;
+  margin-top: -31.25rem;
 }

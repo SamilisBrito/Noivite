@@ -15,9 +15,9 @@ header li {
 }
 .nav {
   float: right;
-  height: 70px;
+  height: 4.375rem;
 }
 .nav-list li:hover {
-  border-bottom: 3px solid var(--v1);
+  border-bottom: 0.1875rem solid var(--v1);
 }
 

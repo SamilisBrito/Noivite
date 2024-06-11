@@ -8,18 +8,18 @@
 }
 
 #services ul {
-  max-height: 1160px;
+  max-height: 72.5rem;
   height: 100%;
 }
 
 #services li {
   float: inline-start;
-  max-width: 259px;
+  max-width: 16.1875rem;
   height: 21.25rem;
   background-color: var(--c3);
   padding: 2.5rem 1.25rem 1.25rem 2.5rem;
   border-radius: 2.5rem;
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 #services .last {
