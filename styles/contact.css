@@ -112,3 +112,9 @@ textarea::placeholder,
 #contact h3 {
   margin-bottom: 1.25rem;
 }
+
+#form-button:disabled {
+  background-color: var(--e2);
+  cursor: not-allowed;
+
+}
