@@ -1,55 +1,101 @@
 #about {
   background-color: var(--c3);
-  background-image: linear-gradient(to left, var(--c2) 50%, var(--c3) 0);
+  background-image: linear-gradient(to left, var(--c2) 58%, var(--c3) 0);
 }
 
 .detail {
-  max-width: 47.5rem;
+  /* max-width: 72.5rem;
   background-color: var(--c3);
   border-radius: 0 4.375rem 4.375rem 0;
   position: relative;
   left: 50%;
-  transform: translateX(-76%);
+  transform: translateX(-76%); */
 }
 
 .conteiner {
+}
+
+.-mt-4 {
+  margin-top: -4px;
+}
+
+.-mb-4 {
+  margin-bottom: -4px;
+}
+
+.content-about {
+  margin: 0 auto;
+  max-width: 72.5rem;
+}
+
+.content-about td:first-child {
+  width: 47.5rem;
+  background-color: var(--c3);
+  border-radius: 0 4.375rem 4.375rem 0;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.content-about {
-  max-width: 36.25rem;
+.content-about td:first-child p {
+  max-width: 35rem;
+}
+
+.content-about td:last-child {
+  position: relative;
+}
+
+.content-about .decoration-1 {
+  position: absolute;
+  border-radius: 6.25rem;
+  top: 0rem;
+  right: -5rem;
+}
+
+.content-about .decoration-2 {
+  border-radius: 0 6.25rem 6.25rem 0;
+  /* position: absolute; */
+  /* top: 15rem; */
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: -5rem;
+}
+.content-about .decoration-3 {
+  border-radius: 6.25rem;
+  width: 12.5rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 5.625rem;
 }
 
 #about h2 {
-  margin-bottom: 3.75rem;
+  margin-bottom: 2.75rem;
   text-align: left;
 }
 
 #about p {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   margin-bottom: 2rem;
 }
 
 #about .img2-2-content {
   float: inline-start;
   position: relative;
-  top: -34.75rem;
-  left: 55rem;
+  /* top: -34.75rem; */
+  /* left: 55rem; */
 }
 
 #about .img3-2-content {
-  float: right;
+  /* float: right; */
   position: relative;
-  top: -252px;
-  left: 50rem;
+  /* top: -252px; */
+  /* left: 50rem; */
   width: 200px;
 }
 
 #about .img4-2-content {
   border-radius: 0 6.25rem 6.25rem 0;
   position: relative;
-  float: right;
-  top: -19.75rem;
-  left: 25rem;
+  /* float: right; */
+  /* top: -19.75rem; */
+  /* left: 25rem; */
 }
