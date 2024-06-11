@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <title>Noivite.</title>
   </head>
   <body>
@@ -52,11 +53,7 @@
             <a class="button inline" href="http://">COMECE AGORA</a>
           </div>
 
-          <img
-            class="img1"
-            src="./img/decoracao1.png"
-            alt="recém casados"
-          />
+          <img class="img1" src="./img/decoracao1.png" alt="recém casados" />
 
           <img
             class="img2"
@@ -70,11 +67,7 @@
             alt="recém casados se beijando"
           />
 
-          <img
-            class="img4"
-            src="./img/decoracao4.png"
-            alt="recém casados"
-          />
+          <img class="img4" src="./img/decoracao4.png" alt="recém casados" />
         </div>
       </section>
       <section id="services">
@@ -219,7 +212,7 @@
               </td>
 
               <td class="form">
-                <form>
+                <form id="form-contact">
                   <fieldset class="inline">
                     <label for="name">Nome</label>
                     <input
@@ -260,7 +253,9 @@
                       required
                     ></textarea>
                   </fieldset>
-                  <button class="button" type="submit">ENVIAR MENSAGEM</button>
+                  <button id="form-button" class="button" type="submit" disabled>
+                    ENVIAR MENSAGEM
+                  </button>
                 </form>
               </td>
             </tr>
@@ -306,7 +301,7 @@
         © Copyright 2023. noivite. Todos os direitos reservados. Pará, Brasil.
       </p>
     </footer>
-
+    <script src="./script.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script>
