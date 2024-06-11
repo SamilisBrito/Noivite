@@ -53,8 +53,6 @@
 
 .content-about .decoration-2 {
   border-radius: 0 6.25rem 6.25rem 0;
-  /* position: absolute; */
-  /* top: 15rem; */
   margin-top: auto;
   margin-bottom: auto;
   margin-left: -5rem;
@@ -80,22 +78,15 @@
 #about .img2-2-content {
   float: inline-start;
   position: relative;
-  /* top: -34.75rem; */
-  /* left: 55rem; */
 }
 
 #about .img3-2-content {
-  /* float: right; */
   position: relative;
-  /* top: -252px; */
-  /* left: 50rem; */
+
   width: 200px;
 }
 
 #about .img4-2-content {
   border-radius: 0 6.25rem 6.25rem 0;
   position: relative;
-  /* float: right; */
-  /* top: -19.75rem; */
-  /* left: 25rem; */
 }

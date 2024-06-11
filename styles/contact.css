@@ -4,16 +4,21 @@
 }
 
 #contact h2 {
-  margin-bottom: 3.75rem;
+  /* margin-bottom: 3.75rem; */
 }
 
 .content-support {
-  width: 25rem;
+  height: 100%;
+  /* width: 25rem; */
   background-color: var(--e1);
   border-radius: 70px 0 0 70px;
-  padding-top: 6.375rem;
-  padding-bottom: 6.375rem;
+  padding: 6.375rem 4.0625rem;
 }
+
+.container-contact table {
+  margin: auto;
+}
+
 .content-support * {
   color: var(--c3);
 }
@@ -23,8 +28,8 @@
   margin: 0 auto;
 }
 
-#contact form {
-  float: right;
+#contact .form {
+  /* float: right; */
   padding: 3.0625rem 2.625rem;
   border-radius: 0 4.375rem 4.375rem 0;
   width: 600px;
