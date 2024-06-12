@@ -45,7 +45,8 @@ h2 {
   text-align: center;
 }
 
-.inline, .social-networking *  {
+.inline,
+.social-networking * {
   display: inline-block;
 }
 
@@ -75,4 +76,35 @@ h2 {
 
 .clear {
   clear: both;
+}
+
+@media (max-width: 1360px) {
+  .img1 {
+    width: 15.625rem;
+  }
+  #hero .img2 {
+    width: 10.125rem;
+    margin-left: 20rem;
+  }
+  #hero .img3 {
+    width: 11.75rem;
+    margin-right: 14.25rem;
+    margin-top: -10.875rem;
+  }
+  #hero .img4 {
+    width: 14.375rem;
+    margin-top: -22.75rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .content-limit, .content-about td:first-child {
+    padding: 0.625rem;
+  }
+  #about .content-about .decoration-1{
+    right: 0;
+  }
+  #about .content-about .decoration-3 {
+    left: 0;
+  }
 }
