@@ -22,5 +22,4 @@
 - Ação de botão de chamada para ação (por exemplo, exibir uma mensagem de agradecimento ou redirecionar para outra página, utilizando JS, claro).
 - Escolha uma paleta de cores harmoniosa e fontes apropriadas.
 
-**OBS:** Sem utilização dos display flex e grid
-**OBS:** A acão ocorre no botão do formulário após o formulário estar preenchido
+**OBS:** Sem utilização dos display flex e grid e a acão ocorre no botão do formulário após o formulário estar preenchido
