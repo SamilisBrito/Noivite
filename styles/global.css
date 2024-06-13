@@ -124,6 +124,16 @@ h2 {
   }
 }
 
+@media (max-width: 1180px) {
+  html {
+    font-size: 14px;
+  }
+  .content-limit,
+  .content-about td:first-child {
+    padding: 0.625rem;
+  }
+}
+
 @media (max-width: 1000px) {
   #hero .img4 {
     top: 43.75rem;
@@ -143,7 +153,8 @@ h2 {
     display: block;
   }
 
-  #contact fieldset input#name,   #contact fieldset input#phone {
+  #contact fieldset input#name,
+  #contact fieldset input#phone {
     width: 100%;
   }
   section#contact {
@@ -158,13 +169,13 @@ h2 {
 }
 
 @media (max-width: 800px) {
-  .content-about .decoration-2, #footer img{
+  .content-about .decoration-2,
+  #footer img {
     display: none;
   }
-  
 }
 
-@media (max-width: 860px) {
+@media (max-width: 733px) {
   #services li:nth-child(2) {
     margin-right: 0;
   }
@@ -180,12 +191,67 @@ h2 {
   }
 }
 
-@media (max-width: 1180px) {
-  html {
-    font-size: 14px;
+@media (max-width: 600px) {
+  .content-support {
+    display: none;
   }
-  .content-limit,
-  .content-about td:first-child {
-    padding: 0.625rem;
+  #contact td.form {
+    border-radius: 4.375rem;
+    border-left: 0.1875rem solid;
+    border-color: var(--c3);
+  }
+
+  section#services,
+  section#about,
+  section#contact {
+    margin: 3.75rem 0;
+  }
+  section#contact {
+    padding: 10px;
+  }
+
+  section#services,
+  section#about {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #services ul li {
+    margin-right: 0;
+    height: 226px;
+    padding: 20px;
+  }
+  .logo,
+  h1,
+  h2 {
+    font-size: 26px;
+    line-height: calc(24px * 1.5);
+  }
+  header {
+    text-align: center;
+  }
+  header .nav {
+    float: none;
+    height: 0;
+  }
+  header .nav-list li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #services li .feather {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  section h2,
+  section#about h2 {
+    margin-bottom: 30px;
+  }
+  #footer .content-footer {
+    float: right;
+  }
+  #footer p.logo {
+    margin-right: 0;
   }
 }
