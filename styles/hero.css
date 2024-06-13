@@ -34,7 +34,7 @@
 
 .img1 {
   margin-top: -8.8125rem;
-  animation: imageinput4 4s ease-in-out forwards, slide-up-loop 10s ease-in-out infinite 3s;
+  animation: imageinput4 3s ease-in-out forwards, slide-up-loop 10s ease-in-out infinite 3s;
 }
 
 .img2 {
@@ -45,7 +45,7 @@
 .img3 {
   float: right;
   margin: -16.875rem 21.25rem;
-  animation: imageinput4 2s ease-in-out forwards, slide-up-loop 10s ease-in-out infinite 2s;
+  animation: imageinput4 3s ease-in-out forwards, slide-up-loop 10s ease-in-out infinite 2s;
 }
 
 .img4 {
