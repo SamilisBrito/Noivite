@@ -12,6 +12,7 @@
 * {
   color: var(--f1);
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 :focus-visible {
@@ -72,10 +73,6 @@ h2 {
 .button:hover {
   background-color: var(--e2);
   cursor: pointer;
-}
-
-.clear {
-  clear: both;
 }
 
 @media (max-width: 1600px) {
