@@ -13,6 +13,7 @@
             },
             padding: {
               section: "7.5rem",
+              "10px": "0.625rem",
             },
             margin: {
               title: "3.75rem",
@@ -22,6 +23,10 @@
             },
             gridTemplateColumns: {
               "columns-card": "repeat(auto-fit, minmax(10.625rem, 1fr))",
+            },
+            backgroundImage: {
+              "bg-about":
+                "linear-gradient(to left, var(--c2) 58%, var(--c3) 0)",
             },
             colors: {
               clifford: "#da373d",
@@ -61,7 +66,7 @@
   <body>
     <header class="fixed left-0 right-0 bg-c2 z-10">
       <div
-        class="max-w-6xl w-full mx-auto flex justify-between items-center py-5"
+        class="max-w-6xl w-full mx-auto flex justify-between items-center py-5 px-10px"
       >
         <a class="logo inline-block" href="#">
           noivite<span class="dot">.</span>
@@ -118,96 +123,108 @@
           </div>
 
           <img
-            class="img1 rounded-[6.25rem] col-start-1 row-start-1 mt-auto mb-auto"
+            class="img1 rounded-full col-start-1 row-start-1 mt-auto mb-auto"
             src="./img/decoracao1.png"
             alt="recém casados"
           />
 
           <img
-            class="img2 rounded-[6.25rem] col-start-2 mt-8"
+            class="img2 rounded-full col-start-2 mt-8"
             src="./img/decoracao2.png"
             alt="recém casados de mãos dada"
           />
 
           <img
-            class="img3 rounded-[6.25rem] col-start-3 ml-auto"
+            class="img3 rounded-full col-start-3 ml-auto"
             src="./img/decoracao3.png"
             alt="recém casados se beijando"
           />
 
           <img
-            class="img4 rounded-l-[6.25rem] col-start-4 row-start-1 mt-auto mb-auto"
+            class="img4 rounded-l-full col-start-4 row-start-1 mt-auto mb-auto"
             src="./img/decoracao4.png"
             alt="recém casados"
           />
         </div>
       </section>
-      <section id="services" class="max-w-6xl mx-auto pt-section">
-        <h2 class="text-title mb-title">nossos serviços<span class="dot">.</span></h2>
+      <section id="services" class="max-w-6xl mx-auto pt-section px-10px">
+        <h2 class="text-title mb-title">
+          nossos serviços<span class="dot">.</span>
+        </h2>
         <ul class="grid grid-cols-columns-card gap-10 text-center">
           <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
             <i class="stroke-e1 h-16 w-16 mb-7" data-feather="pen-tool"></i>
             <h3 class="font-semibold text-xl">Escolha seu estilo</h3>
-            <p>Modelos personalizados para todos os gostos</p>
+            <p class="text-e1">Modelos personalizados para todos os gostos</p>
           </li>
           <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
             <i class="stroke-e1 h-16 w-16 mb-7" data-feather="share"></i>
 
             <h3 class="font-semibold text-xl">Compartilhe com facilidade</h3>
-            <p>Convites compartilháveis em um clique</p>
+            <p class="text-e1">Convites compartilháveis em um clique</p>
           </li>
           <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
             <i class="stroke-e1 h-16 w-16 mb-7" data-feather="repeat"></i>
 
             <h3 class="font-semibold text-xl">Confirmações em tempo real</h3>
-            <p>Gerencie confirmações instantaneamente</p>
+            <p class="text-e1">Gerencie confirmações instantaneamente</p>
           </li>
           <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
             <i class="stroke-e1 h-16 w-16 mb-7" data-feather="gift"></i>
 
             <h3 class="font-semibold text-xl">Facilite presentes</h3>
-            <p>Sugira e confirme presentes/pix</p>
+            <p class="text-e1">Sugira e confirme presentes/pix</p>
           </li>
         </ul>
       </section>
-      <section id="about">
-        <div class="content-about">
-          <div class="-mt-4 -mb-4">
-            <h2 class="text-title">sobre noivite<span class="dot">.</span></h2>
-            <p>
-              Noivite nasceu da paixão de Samilis, uma entusiasta de tecnologia
-              e romântica. Inspirada durante uma caminhada à beira-mar, ela
-              criou um aplicativo para simplificar o planejamento de casamentos.
-              Com convites digitais e gestão de convidados intuitiva, Noivite
-              rapidamente se tornou um sucesso, ajudando casais a celebrar seu
-              amor de maneira mágica e sem estresse.
-            </p>
-            <a class="button" href="https://noivite.vercel.app/" target="_blank"
-              >COMECE AGORA</a
+      <section id="about" class="pt-section">
+        <div class="bg">
+          <div class="flex max-w-6xl mx-auto">
+            <div
+              class="bg-c3 max-w-3xl py-20 pr-[6.25rem] rounded-r-[4.375rem] pl-[10px]"
             >
-          </div>
-          <div>
-            <img
-              class="decoration-1"
-              src="./img/decoracao3.png"
-              alt="recém casados se beijando"
-            />
+              <h2 class="text-title text-left mb-8">
+                sobre noivite<span class="dot">.</span>
+              </h2>
+              <p class="text-2xl text-e1 mb-8">
+                Noivite nasceu da paixão de Samilis, uma entusiasta de
+                tecnologia e romântica. Inspirada durante uma caminhada à
+                beira-mar, ela criou um aplicativo para simplificar o
+                planejamento de casamentos. Com convites digitais e gestão de
+                convidados intuitiva, Noivite rapidamente se tornou um sucesso,
+                ajudando casais a celebrar seu amor de maneira mágica e sem
+                estresse.
+              </p>
+              <a
+                class="button"
+                href="https://noivite.vercel.app/"
+                target="_blank"
+                >COMECE AGORA</a
+              >
+            </div>
+            <figure class="relative grid">
+              <img
+                class="decoration-1"
+                src="./img/decoracao3.png"
+                alt="recém casados se beijando"
+              />
 
-            <img
-              class="decoration-2"
-              src="./img/decoracao4.png"
-              alt="recém casados"
-            />
+              <img
+                class="decoration-2"
+                src="./img/decoracao4.png"
+                alt="recém casados"
+              />
 
-            <img
-              class="decoration-3"
-              src="./img/decoracao2.png"
-              alt="recém casados de mãos dada"
-            />
+              <img
+                class="decoration-3"
+                src="./img/decoracao2.png"
+                alt="recém casados de mãos dada"
+              />
+            </figure>
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="max-w-6xl mx-auto pt-section px-10px">
         <div class="container-contact">
           <h2 class="text-title">nosso contato<span class="dot">.</span></h2>
 
