@@ -3,6 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontSize: {
+              title: ["3.4375rem", { lineHeight: "4.5rem", fontWeight: "700" }],
+            },
+            padding: {
+              section: "7.5rem",
+            },
+            margin: {
+              title: "3.75rem",
+            },
+            borderRadius: {
+              forty: "2.5rem",
+            },
+            gridTemplateColumns: {
+              "columns-card": "repeat(auto-fit, minmax(10.625rem, 1fr))",
+            },
+            colors: {
+              clifford: "#da373d",
+              c1: "#ecc9a3",
+              c2: "#fdecd2",
+              c3: "#faf2e6",
+              v1: "#8fb27c",
+              v2: "#bbcf9a",
+              e1: "#709a94",
+              e2: "#a0bcae",
+              f1: "#235560",
+            },
+          },
+        },
+      };
+    </script>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,92 +59,121 @@
     <title>Noivite.</title>
   </head>
   <body>
-    <header>
-      <div class="content-limit">
-        <a class="logo inline" href="#">noivite<span class="dot">.</span></a>
-        <nav class="nav inline">
-          <ul class="inline nav-list">
-            <li class="inline"><a href="#services">Serviços</a></li>
-            <li class="inline"><a href="#about">Sobre</a></li>
-            <li class="inline"><a href="#contact">Contato</a></li>
+    <header class="fixed left-0 right-0 bg-c2 z-10">
+      <div
+        class="max-w-6xl w-full mx-auto flex justify-between items-center py-5"
+      >
+        <a class="logo inline-block" href="#">
+          noivite<span class="dot">.</span>
+        </a>
+        <nav>
+          <ul class="flex text-lg font-medium">
+            <li class="p-2">
+              <a
+                class="border-b-4 border-solid border-transparent hover:border-v1"
+                href="#services"
+                >Serviços</a
+              >
+            </li>
+            <li class="p-2">
+              <a
+                class="border-b-4 border-solid border-transparent hover:border-v1"
+                href="#about"
+                >Sobre</a
+              >
+            </li>
+            <li class="p-2">
+              <a
+                class="border-b-4 border-solid border-transparent hover:border-v1"
+                href="#contact"
+                >Contato</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
-      <section id="hero">
-        <div class="content-limit">
-          <div class="hero-content">
-            <h1>
+      <section id="hero" class="bg-c3 py-9">
+        <div
+          class="max-w-7xl w-full mx-auto grid grid-cols-[1fr 3fr 3fr 1fr] gap-2"
+        >
+          <div
+            class="max-w-4xl mx-auto grid justify-items-center gap-8 col-start-2 col-span-2"
+          >
+            <h1 class="text-title">
               Convites especiais para o dia mais importante da sua vida<span
                 class="dot"
                 >.</span
               >
             </h1>
-            <p>
+            <p class="text-2xl text-center">
               O nosso objetivo é fazer com que a sua experiência de planejamento
               do casamento seja agradável
             </p>
-            <a
-              class="button inline"
-              href="https://noivite.vercel.app/"
-              target="_blank"
+            <a class="button" href="https://noivite.vercel.app/" target="_blank"
               >COMECE AGORA</a
             >
           </div>
 
-          <img class="img1" src="./img/decoracao1.png" alt="recém casados" />
+          <img
+            class="img1 rounded-[6.25rem] col-start-1 row-start-1 mt-auto mb-auto"
+            src="./img/decoracao1.png"
+            alt="recém casados"
+          />
 
           <img
-            class="img2"
+            class="img2 rounded-[6.25rem] col-start-2 mt-8"
             src="./img/decoracao2.png"
             alt="recém casados de mãos dada"
           />
 
           <img
-            class="img3"
+            class="img3 rounded-[6.25rem] col-start-3 ml-auto"
             src="./img/decoracao3.png"
             alt="recém casados se beijando"
           />
 
-          <img class="img4" src="./img/decoracao4.png" alt="recém casados" />
+          <img
+            class="img4 rounded-l-[6.25rem] col-start-4 row-start-1 mt-auto mb-auto"
+            src="./img/decoracao4.png"
+            alt="recém casados"
+          />
         </div>
       </section>
-      <section id="services">
-        <div class="content-limit">
-          <h2>nossos serviços<span class="dot">.</span></h2>
-          <ul>
-            <li>
-              <i data-feather="pen-tool"></i>
-              <h3>Escolha seu estilo</h3>
-              <p>Modelos personalizados para todos os gostos</p>
-            </li>
-            <li>
-              <i class="size" data-feather="share"></i>
+      <section id="services" class="max-w-6xl mx-auto pt-section">
+        <h2 class="text-title mb-title">nossos serviços<span class="dot">.</span></h2>
+        <ul class="grid grid-cols-columns-card gap-10 text-center">
+          <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
+            <i class="stroke-e1 h-16 w-16 mb-7" data-feather="pen-tool"></i>
+            <h3 class="font-semibold text-xl">Escolha seu estilo</h3>
+            <p>Modelos personalizados para todos os gostos</p>
+          </li>
+          <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
+            <i class="stroke-e1 h-16 w-16 mb-7" data-feather="share"></i>
 
-              <h3>Compartilhe com facilidade</h3>
-              <p>Convites compartilháveis em um clique</p>
-            </li>
-            <li>
-              <i class="size" data-feather="repeat"></i>
+            <h3 class="font-semibold text-xl">Compartilhe com facilidade</h3>
+            <p>Convites compartilháveis em um clique</p>
+          </li>
+          <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
+            <i class="stroke-e1 h-16 w-16 mb-7" data-feather="repeat"></i>
 
-              <h3>Confirmações em tempo real</h3>
-              <p>Gerencie confirmações instantaneamente</p>
-            </li>
-            <li class="last">
-              <i class="size" data-feather="gift"></i>
+            <h3 class="font-semibold text-xl">Confirmações em tempo real</h3>
+            <p>Gerencie confirmações instantaneamente</p>
+          </li>
+          <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
+            <i class="stroke-e1 h-16 w-16 mb-7" data-feather="gift"></i>
 
-              <h3>Facilite presentes</h3>
-              <p>Sugira e confirme presentes/pix</p>
-            </li>
-            <div class="clear"></div>
-          </ul>
-        </div>
+            <h3 class="font-semibold text-xl">Facilite presentes</h3>
+            <p>Sugira e confirme presentes/pix</p>
+          </li>
+        </ul>
       </section>
       <section id="about">
         <div class="content-about">
           <div class="-mt-4 -mb-4">
-            <h2>sobre noivite<span class="dot">.</span></h2>
+            <h2 class="text-title">sobre noivite<span class="dot">.</span></h2>
             <p>
               Noivite nasceu da paixão de Samilis, uma entusiasta de tecnologia
               e romântica. Inspirada durante uma caminhada à beira-mar, ela
@@ -145,7 +209,7 @@
       </section>
       <section id="contact">
         <div class="container-contact">
-          <h2>nosso contato<span class="dot">.</span></h2>
+          <h2 class="text-title">nosso contato<span class="dot">.</span></h2>
 
           <div class="content-support-ul">
             <h3>Suporte Online</h3>
@@ -182,7 +246,7 @@
                 <p>+55 91 9999-9999</p>
               </li>
 
-              <ul title="Redes sociais" class="social-networking">
+              <ul title="Redes sociais" class="inline-block">
                 <li>
                   <a href="#"><i data-feather="instagram"></i></a>
                 </li>
@@ -197,7 +261,7 @@
 
             <div class="form">
               <form id="form-contact">
-                <fieldset class="inline">
+                <fieldset class="inline-block">
                   <label for="name">Nome</label>
                   <input
                     type="text"
@@ -207,7 +271,7 @@
                     required
                   />
                 </fieldset>
-                <fieldset class="inline">
+                <fieldset class="inline-block">
                   <label for="phone">Telefone</label>
                   <input
                     type="tel"
