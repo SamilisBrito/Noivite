@@ -10,19 +10,26 @@
           extend: {
             fontSize: {
               title: ["3.4375rem", { lineHeight: "4.5rem", fontWeight: "700" }],
+              "r-title": ["1.875rem", { fontWeight: "700" }],
+            },
+            fontFamily: {
+              literata: ['"Literata"', "serif"],
             },
             padding: {
               section: "7.5rem",
+              "r-section": "1.875rem",
               "10px": "0.625rem",
             },
             margin: {
               title: "3.75rem",
+              footer: "7.5rem",
+              "r-footer": "1.875rem",
             },
             borderRadius: {
               forty: "2.5rem",
             },
             gridTemplateColumns: {
-              "columns-card": "repeat(auto-fit, minmax(10.625rem, 1fr))",
+              "columns-card": "repeat(auto-fit, minmax(13.75rem, 1fr))",
             },
             backgroundImage: {
               "bg-about":
@@ -38,6 +45,9 @@
               e1: "#709a94",
               e2: "#a0bcae",
               f1: "#235560",
+            },
+            screens: {
+              "r-800": "800px",
             },
           },
         },
@@ -68,8 +78,8 @@
       <div
         class="max-w-6xl w-full mx-auto flex justify-between items-center py-5 px-10px"
       >
-        <a class="logo inline-block" href="#">
-          noivite<span class="dot">.</span>
+        <a class="font-literata text-2xl sm:text-[40px] font-semibold" href="#">
+          noivite<span class="text-v1">.</span>
         </a>
         <nav>
           <ul class="flex text-lg font-medium">
@@ -107,9 +117,9 @@
           <div
             class="max-w-4xl mx-auto grid justify-items-center gap-8 col-start-2 col-span-2"
           >
-            <h1 class="text-title">
+            <h1 class="text-r-title sm:text-title font-literata text-center">
               Convites especiais para o dia mais importante da sua vida<span
-                class="dot"
+                class="text-v1"
                 >.</span
               >
             </h1>
@@ -147,11 +157,16 @@
           />
         </div>
       </section>
-      <section id="services" class="max-w-6xl mx-auto pt-section px-10px">
-        <h2 class="text-title mb-title">
-          nossos serviços<span class="dot">.</span>
+      <section
+        id="services"
+        class="max-w-6xl mx-auto pt-r-section md:pt-section px-10px"
+      >
+        <h2
+          class="font-literata text-r-title sm:text-title mb-title text-center"
+        >
+          nossos serviços<span class="text-v1">.</span>
         </h2>
-        <ul class="grid grid-cols-columns-card gap-10 text-center">
+        <ul class="grid grid-cols-columns-card gap-5 md:gap-10 text-center">
           <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
             <i class="stroke-e1 h-16 w-16 mb-7" data-feather="pen-tool"></i>
             <h3 class="font-semibold text-xl">Escolha seu estilo</h3>
@@ -177,16 +192,18 @@
           </li>
         </ul>
       </section>
-      <section id="about" class="pt-section">
+      <section id="about" class="pt-r-section md:pt-section">
         <div class="bg">
           <div class="flex max-w-6xl mx-auto">
             <div
-              class="bg-c3 max-w-3xl py-20 pr-[6.25rem] rounded-r-[4.375rem] pl-[10px]"
+              class="bg-c3 px-5 py-8 max-w-full sm:max-w-2xl lg:max-w-3xl md:py-20 md:pr-[6.25rem] rounded-r-[4.375rem] md:pl-[10px]"
             >
-              <h2 class="text-title text-left mb-8">
-                sobre noivite<span class="dot">.</span>
+              <h2
+                class="font-literata text-r-title sm:text-title text-left mb-8"
+              >
+                sobre noivite<span class="text-v1">.</span>
               </h2>
-              <p class="text-2xl text-e1 mb-8">
+              <p class="text-base sm:text-2xl text-e1 mb-8">
                 Noivite nasceu da paixão de Samilis, uma entusiasta de
                 tecnologia e romântica. Inspirada durante uma caminhada à
                 beira-mar, ela criou um aplicativo para simplificar o
@@ -204,19 +221,19 @@
             </div>
             <figure class="relative grid">
               <img
-                class="decoration-1"
+                class="decoration-1 hidden lg:inline-block"
                 src="./img/decoracao3.png"
                 alt="recém casados se beijando"
               />
 
               <img
-                class="decoration-2"
+                class="decoration-2 hidden r-800:inline-block"
                 src="./img/decoracao4.png"
                 alt="recém casados"
               />
 
               <img
-                class="decoration-3"
+                class="decoration-3 hidden lg:inline-block"
                 src="./img/decoracao2.png"
                 alt="recém casados de mãos dada"
               />
@@ -224,14 +241,25 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="max-w-6xl mx-auto pt-section px-10px">
-        <div class="container-contact">
-          <h2 class="text-title">nosso contato<span class="dot">.</span></h2>
+      <section
+        id="contact"
+        class="max-w-4xl mx-auto pt-r-section md:pt-section px-10px"
+      >
+        <h2
+          class="font-literata text-r-title sm:text-title text-center mb-title"
+        >
+          nosso contato<span class="text-v1">.</span>
+        </h2>
 
-          <div class="content-support-ul">
-            <h3>Suporte Online</h3>
-            <ul id="address-table" title="Endereços">
-              <li>
+        <div class="flex-row sm:flex">
+          <div
+            class="address rounded-t-[4.0625rem] grid justify-items-center p-5 bg-e1 md:inline-block sm:content-center sm:rounded-none sm:rounded-l-[4.0625rem] md:p-16"
+          >
+            <h3 class="mb-7 sm:mb-[3.75rem] text-lg font-semibold">
+              Suporte Online
+            </h3>
+            <ul class="grid gap-8" title="Endereços">
+              <li class="flex gap-2">
                 <i data-feather="map-pin"></i>
                 <ul>
                   <li>
@@ -246,9 +274,8 @@
                 </ul>
               </li>
 
-              <li>
+              <li class="flex gap-2">
                 <i data-feather="mail"></i>
-
                 <ul>
                   <li>
                     <p>contato@noivite.com</p>
@@ -258,110 +285,146 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="flex gap-2">
                 <i data-feather="phone"></i>
                 <p>+55 91 9999-9999</p>
               </li>
 
-              <ul title="Redes sociais" class="inline-block">
+              <ul class="flex gap-8 justify-center" title="Redes sociais">
                 <li>
-                  <a href="#"><i data-feather="instagram"></i></a>
+                  <a href="#"
+                    ><i class="hover:stroke-c1" data-feather="instagram"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="#"><i data-feather="facebook"></i></a>
+                  <a href="#"
+                    ><i class="hover:stroke-c1" data-feather="facebook"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="#"><i data-feather="youtube"></i></a>
+                  <a href="#"
+                    ><i class="hover:stroke-c1" data-feather="youtube"></i
+                  ></a>
                 </li>
               </ul>
             </ul>
-
-            <div class="form">
-              <form id="form-contact">
-                <fieldset class="inline-block">
-                  <label for="name">Nome</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Seu nome"
-                    required
-                  />
-                </fieldset>
-                <fieldset class="inline-block">
-                  <label for="phone">Telefone</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    placeholder="(91) 9999-9999"
-                  />
-                </fieldset>
-                <fieldset>
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    autocomplete="email"
-                    id="email"
-                    placeholder="contato@email.com"
-                    required
-                  />
-                </fieldset>
-                <fieldset>
-                  <label for="message">Mensagem</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="O que você precisa?"
-                    rows="4"
-                    required
-                  ></textarea>
-                </fieldset>
-                <button id="form-button" class="button" type="submit" disabled>
-                  ENVIAR MENSAGEM
-                </button>
-              </form>
-            </div>
           </div>
+
+          <form
+            class="grid gap-6 rounded-b-[4.0625rem] py-5 md:py-12 px-11 border-4 border-c3 sm:rounded-none sm:rounded-e-[4.0625rem] w-full"
+          >
+            <div class="grid lg:grid-cols-2 gap-5 flex-wrap">
+              <fieldset class="grid gap-1 w-full">
+                <label
+                  class="text-f1 font-semibold text-base sm:text-xl"
+                  for="name"
+                  >Nome</label
+                >
+                <input
+                  class="p-3 rounded-2xl"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Seu nome"
+                  required
+                />
+              </fieldset>
+              <fieldset class="grid gap-1">
+                <label
+                  class="text-f1 font-semibold text-base sm:text-xl"
+                  for="phone"
+                  >Telefone</label
+                >
+                <input
+                  class="p-3 rounded-2xl"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="(91) 9999-9999"
+                />
+              </fieldset>
+            </div>
+            <fieldset class="grid gap-1">
+              <label
+                class="text-f1 font-semibold text-base sm:text-xl"
+                for="email"
+                >Email</label
+              >
+              <input
+                class="p-3 rounded-2xl"
+                type="email"
+                name="email"
+                autocomplete="email"
+                id="email"
+                placeholder="contato@email.com"
+                required
+              />
+            </fieldset>
+            <fieldset class="grid gap-1">
+              <label
+                class="text-f1 font-semibold text-base sm:text-xl"
+                for="message"
+                >Mensagem</label
+              >
+              <textarea
+                class="p-3 rounded-2xl resize-none"
+                name="message"
+                id="message"
+                placeholder="O que você precisa?"
+                rows="4"
+                required
+              ></textarea>
+            </fieldset>
+            <button id="form-button" class="button" type="submit" disabled>
+              ENVIAR MENSAGEM
+            </button>
+          </form>
         </div>
       </section>
     </main>
-    <footer id="footer">
-      <div class="content-limit">
-        <div>
-          <p class="logo">noivite<span class="dot">.</span></p>
-          <div class="content-footer">
-            <h3>Contato</h3>
-            <p>
-              +55 21 9999-9999 <br />
-              contato@noivite.com <br />
-            </p>
-            <p>
-              Rua Ali Perto, 37 - Botafogo <br />
-              Capanema - PA
-            </p>
-            <ul class="social-networking">
-              <li>
-                <a href="#"><i data-feather="instagram"></i></a>
-              </li>
-              <li>
-                <a href="#">
-                  <i data-feather="facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i data-feather="youtube"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <img width="336" src="./img/logo.svg" alt="" />
-          <div class="clear"></div>
+    <footer id="footer" class="bg-c3 mt-r-footer md:mt-footer">
+      <div class="max-w-6xl mx-auto flex justify-between py-12 px-10px">
+        <p class="font-literata text-2xl sm:text-[40px] font-semibold">
+          noivite<span class="text-v1">.</span>
+        </p>
+        <div class="content-footer">
+          <h3 class="font-literata text-base sm:text-2xl font-semibold">
+            Contato
+          </h3>
+          <p class="border-b-4 border-c2 py-3 text-sm sm:text-base">
+            +55 21 9999-9999 <br />
+            contato@noivite.com <br />
+          </p>
+          <p class="border-b-4 border-c2 py-3 mb-3 text-sm sm:text-base">
+            Rua Ali Perto, 37 - Botafogo <br />
+            Capanema - PA
+          </p>
+          <ul class="flex gap-8">
+            <li>
+              <a href="#"
+                ><i class="hover:stroke-c1" data-feather="instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="hover:stroke-c1" data-feather="facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="hover:stroke-c1" data-feather="youtube"></i>
+              </a>
+            </li>
+          </ul>
         </div>
+        <img
+          class="hidden md:inline-block"
+          width="336"
+          src="./img/logo.svg"
+          alt="logo do noivite"
+        />
       </div>
-      <p class="cop">
+      <p class="text-sm sm:text-base text-center py-5 border-t-4 border-t-c2">
         © Copyright 2023. noivite. Todos os direitos reservados. Pará, Brasil.
       </p>
     </footer>

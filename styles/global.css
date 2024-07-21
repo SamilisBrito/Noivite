@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+.address * {
+  color: var(--c3);
+}
+
 :focus-visible {
   outline: transparent;
   box-shadow: 0 0 0 0.125rem var(--v1);
@@ -28,38 +32,21 @@ main {
   padding-top: 6.375rem;
 }
 
-.logo,
-h2,
-h1 {
-  font-family: "Literata", serif;
-}
 
-h1,
-h2 {
-  line-height: 3.75rem;
-  font-size: 3.125rem;
-  text-align: center;
-}
 
-.logo {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-.dot {
-  color: var(--v1);
-}
-
-.button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: var(--e1);
-  color: var(--c3);
-  border-radius: 1.875rem;
-  border: 0.0625rem solid transparent;
-  font-size: 1rem;
-  font-weight: 600;
-}
+/* @layer components { */
+  .button {
+    /* @apply inline-block py-4 px-8 bg-e1 text-c3 border rounded-[1.875rem] text-base font-bold; */
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--e1);
+    color: var(--c3);
+    border-radius: 1.875rem;
+    border: 0.0625rem solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+/* } */
 
 .button:hover {
   background-color: var(--e2);
