@@ -29,24 +29,18 @@ body {
 }
 
 main {
-  padding-top: 6.375rem;
+  padding-top: 84px;
 }
 
-
-
-/* @layer components { */
-  .button {
-    /* @apply inline-block py-4 px-8 bg-e1 text-c3 border rounded-[1.875rem] text-base font-bold; */
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--e1);
-    color: var(--c3);
-    border-radius: 1.875rem;
-    border: 0.0625rem solid transparent;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-/* } */
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--e1);
+  color: var(--c3);
+  border-radius: 1.875rem;
+  border: 0.0625rem solid transparent;
+  font-weight: 600;
+}
 
 .button:hover {
   background-color: var(--e2);

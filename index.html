@@ -1,438 +1,322 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontSize: {
-              title: ["3.4375rem", { lineHeight: "4.5rem", fontWeight: "700" }],
-              "r-title": ["1.875rem", { fontWeight: "700" }],
-            },
-            fontFamily: {
-              literata: ['"Literata"', "serif"],
-            },
-            padding: {
-              section: "7.5rem",
-              "r-section": "1.875rem",
-              "10px": "0.625rem",
-            },
-            margin: {
-              title: "3.75rem",
-              footer: "7.5rem",
-              "r-footer": "1.875rem",
-            },
-            borderRadius: {
-              forty: "2.5rem",
-            },
-            gridTemplateColumns: {
-              "columns-card": "repeat(auto-fit, minmax(13.75rem, 1fr))",
-            },
-            backgroundImage: {
-              "bg-about":
-                "linear-gradient(to left, var(--c2) 58%, var(--c3) 0)",
-            },
-            colors: {
-              clifford: "#da373d",
-              c1: "#ecc9a3",
-              c2: "#fdecd2",
-              c3: "#faf2e6",
-              v1: "#8fb27c",
-              v2: "#bbcf9a",
-              e1: "#709a94",
-              e2: "#a0bcae",
-              f1: "#235560",
-            },
-            screens: {
-              "r-800": "800px",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            title: ["3.4375rem", { lineHeight: "4.5rem", fontWeight: "700" }],
+            "r-title": ["1.875rem", { fontWeight: "700" }],
+          },
+          fontFamily: {
+            literata: ['"Literata"', "serif"],
+          },
+          padding: {
+            section: "7.5rem",
+            "r60-section": "3.75rem",
+            "10px": "0.625rem",
+          },
+          margin: {
+            title: "3.75rem",
+            "r-title": "1.875rem",
+            footer: "7.5rem",
+            "r60-footer": "3.75rem",
+          },
+          borderRadius: {
+            forty: "2.5rem",
+          },
+          // gridTemplateColumns: {
+          //   "columns-card": "repeat(auto-fit, minmax(13.75rem, 1fr))",
+          // },
+          backgroundImage: {
+            "bg-about":
+              "linear-gradient(to left, var(--c2) 58%, var(--c3) 0)",
+          },
+          colors: {
+            clifford: "#da373d",
+            c1: "#ecc9a3",
+            c2: "#fdecd2",
+            c3: "#faf2e6",
+            v1: "#8fb27c",
+            v2: "#bbcf9a",
+            e1: "#709a94",
+            e2: "#a0bcae",
+            f1: "#235560",
+          },
+          screens: {
+            "r-800": "800px",
           },
         },
-      };
-    </script>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="./styles/normalize.css" /> -->
-    <link rel="stylesheet" href="./styles/global.css" />
-    <!-- <link rel="stylesheet" href="./styles/header.css" /> -->
-    <!-- <link rel="stylesheet" href="./styles/hero.css" /> -->
-    <!-- <link rel="stylesheet" href="./styles/services.css" /> -->
-    <!-- <link rel="stylesheet" href="./styles/about.css" /> -->
-    <!-- <link rel="stylesheet" href="./styles/contact.css" /> -->
-    <!-- <link rel="stylesheet" href="./styles/footer.css" /> -->
-    <!-- <link rel="stylesheet" href="./styles/modal.css" /> -->
-    <title>Noivite.</title>
-  </head>
-  <body>
-    <header class="fixed left-0 right-0 bg-c2 z-10">
-      <div
-        class="max-w-6xl w-full mx-auto flex justify-between items-center py-5 px-10px"
-      >
-        <a class="font-literata text-2xl sm:text-[40px] font-semibold" href="#">
-          noivite<span class="text-v1">.</span>
-        </a>
-        <nav>
-          <ul class="flex text-lg font-medium">
-            <li class="p-2">
-              <a
-                class="border-b-4 border-solid border-transparent hover:border-v1"
-                href="#services"
-                >Serviços</a
-              >
-            </li>
-            <li class="p-2">
-              <a
-                class="border-b-4 border-solid border-transparent hover:border-v1"
-                href="#about"
-                >Sobre</a
-              >
-            </li>
-            <li class="p-2">
-              <a
-                class="border-b-4 border-solid border-transparent hover:border-v1"
-                href="#contact"
-                >Contato</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      },
+    };
+  </script>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./styles/normalize.css" /> -->
+  <link rel="stylesheet" href="./styles/global.css" />
+  <!-- <link rel="stylesheet" href="./styles/header.css" /> -->
+  <!-- <link rel="stylesheet" href="./styles/hero.css" /> -->
+  <!-- <link rel="stylesheet" href="./styles/services.css" /> -->
+  <!-- <link rel="stylesheet" href="./styles/about.css" /> -->
+  <!-- <link rel="stylesheet" href="./styles/contact.css" /> -->
+  <!-- <link rel="stylesheet" href="./styles/footer.css" /> -->
+  <link rel="stylesheet" href="./styles/modal.css" />
+  <title>Noivite.</title>
+</head>
 
-    <main>
-      <section id="hero" class="bg-c3 py-9">
-        <div
-          class="max-w-7xl w-full mx-auto grid grid-cols-[1fr 3fr 3fr 1fr] gap-2"
-        >
-          <div
-            class="max-w-4xl mx-auto grid justify-items-center gap-8 col-start-2 col-span-2"
-          >
-            <h1 class="text-r-title sm:text-title font-literata text-center">
-              Convites especiais para o dia mais importante da sua vida<span
-                class="text-v1"
-                >.</span
-              >
-            </h1>
-            <p class="text-2xl text-center">
-              O nosso objetivo é fazer com que a sua experiência de planejamento
-              do casamento seja agradável
-            </p>
-            <a class="button" href="https://noivite.vercel.app/" target="_blank"
-              >COMECE AGORA</a
-            >
-          </div>
+<body>
+  <header class="fixed left-0 right-0 bg-c2 z-10">
 
-          <img
-            class="img1 rounded-full col-start-1 row-start-1 mt-auto mb-auto"
-            src="./img/decoracao1.png"
-            alt="recém casados"
-          />
-
-          <img
-            class="img2 rounded-full col-start-2 mt-8"
-            src="./img/decoracao2.png"
-            alt="recém casados de mãos dada"
-          />
-
-          <img
-            class="img3 rounded-full col-start-3 ml-auto"
-            src="./img/decoracao3.png"
-            alt="recém casados se beijando"
-          />
-
-          <img
-            class="img4 rounded-l-full col-start-4 row-start-1 mt-auto mb-auto"
-            src="./img/decoracao4.png"
-            alt="recém casados"
-          />
-        </div>
-      </section>
-      <section
-        id="services"
-        class="max-w-6xl mx-auto pt-r-section md:pt-section px-10px"
-      >
-        <h2
-          class="font-literata text-r-title sm:text-title mb-title text-center"
-        >
-          nossos serviços<span class="text-v1">.</span>
-        </h2>
-        <ul class="grid grid-cols-columns-card gap-5 md:gap-10 text-center">
-          <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
-            <i class="stroke-e1 h-16 w-16 mb-7" data-feather="pen-tool"></i>
-            <h3 class="font-semibold text-xl">Escolha seu estilo</h3>
-            <p class="text-e1">Modelos personalizados para todos os gostos</p>
+    <div class="max-w-6xl w-full mx-auto flex justify-between items-center py-5 mx-10px">
+      <a class="font-literata text-2xl sm:text-[40px] font-semibold" href="#">
+        noivite<span class="text-v1">.</span>
+      </a>
+      <nav>
+        <ul class="flex text-lg font-medium">
+          <li class="p-2">
+            <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#services">Serviços</a>
           </li>
-          <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
-            <i class="stroke-e1 h-16 w-16 mb-7" data-feather="share"></i>
-
-            <h3 class="font-semibold text-xl">Compartilhe com facilidade</h3>
-            <p class="text-e1">Convites compartilháveis em um clique</p>
+          <li class="p-2">
+            <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#about">Sobre</a>
           </li>
-          <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
-            <i class="stroke-e1 h-16 w-16 mb-7" data-feather="repeat"></i>
-
-            <h3 class="font-semibold text-xl">Confirmações em tempo real</h3>
-            <p class="text-e1">Gerencie confirmações instantaneamente</p>
-          </li>
-          <li class="bg-c3 p-10 rounded-forty grid justify-items-center gap-3">
-            <i class="stroke-e1 h-16 w-16 mb-7" data-feather="gift"></i>
-
-            <h3 class="font-semibold text-xl">Facilite presentes</h3>
-            <p class="text-e1">Sugira e confirme presentes/pix</p>
+          <li class="p-2">
+            <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#contact">Contato</a>
           </li>
         </ul>
-      </section>
-      <section id="about" class="pt-r-section md:pt-section">
-        <div class="bg">
-          <div class="flex max-w-6xl mx-auto">
-            <div
-              class="bg-c3 px-5 py-8 max-w-full sm:max-w-2xl lg:max-w-3xl md:py-20 md:pr-[6.25rem] rounded-r-[4.375rem] md:pl-[10px]"
-            >
-              <h2
-                class="font-literata text-r-title sm:text-title text-left mb-8"
-              >
-                sobre noivite<span class="text-v1">.</span>
-              </h2>
-              <p class="text-base sm:text-2xl text-e1 mb-8">
-                Noivite nasceu da paixão de Samilis, uma entusiasta de
-                tecnologia e romântica. Inspirada durante uma caminhada à
-                beira-mar, ela criou um aplicativo para simplificar o
-                planejamento de casamentos. Com convites digitais e gestão de
-                convidados intuitiva, Noivite rapidamente se tornou um sucesso,
-                ajudando casais a celebrar seu amor de maneira mágica e sem
-                estresse.
-              </p>
-              <a
-                class="button"
-                href="https://noivite.vercel.app/"
-                target="_blank"
-                >COMECE AGORA</a
-              >
-            </div>
-            <figure class="relative grid">
-              <img
-                class="decoration-1 hidden lg:inline-block"
-                src="./img/decoracao3.png"
-                alt="recém casados se beijando"
-              />
+      </nav>
+    </div>
+  </header>
 
-              <img
-                class="decoration-2 hidden r-800:inline-block"
-                src="./img/decoracao4.png"
-                alt="recém casados"
-              />
-
-              <img
-                class="decoration-3 hidden lg:inline-block"
-                src="./img/decoracao2.png"
-                alt="recém casados de mãos dada"
-              />
-            </figure>
-          </div>
+  <main>
+    <section id="hero" class="bg-c3 py-9">
+      <div class="max-w-7xl w-full mx-auto grid md:grid-cols-4 md:gap-5 lg:grid-cols-[1fr 3fr 3fr 1fr]">
+        <div class="max-w-4xl mx-auto grid justify-items-center gap-8 col-start-2 col-span-2">
+          <h1 class="text-r-title sm:text-4xl lg:text-title font-literata text-center">
+            Convites especiais para o dia mais importante da sua vida<span class="text-v1">.</span>
+          </h1>
+          <p class="sm:text-2xl text-center">
+            O nosso objetivo é fazer com que a sua experiência de planejamento
+            do casamento seja agradável
+          </p>
+          <a class="button text-sm md:text-base" href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
         </div>
-      </section>
-      <section
-        id="contact"
-        class="max-w-4xl mx-auto pt-r-section md:pt-section px-10px"
-      >
-        <h2
-          class="font-literata text-r-title sm:text-title text-center mb-title"
-        >
-          nosso contato<span class="text-v1">.</span>
-        </h2>
 
-        <div class="flex-row sm:flex">
+        <img class="img1 hidden md:inline-block rounded-full col-start-1 row-start-1 mt-auto mb-auto"
+          src="./img/decoracao1.png" alt="recém casados" />
+
+        <img class="img2 hidden lg:inline-block rounded-full col-start-2 mt-8" src="./img/decoracao2.png"
+          alt="recém casados de mãos dada" />
+
+        <img class="img3 hidden lg:inline-block rounded-full col-start-3 ml-auto" src="./img/decoracao3.png"
+          alt="recém casados se beijando" />
+
+        <img class="img4 hidden md:inline-block rounded-l-full col-start-4 row-start-1 mt-auto mb-auto" src="./img/decoracao4.png"
+          alt="recém casados" />
+      </div>
+    </section>
+    <section id="services" class="max-w-6xl mx-auto  pt-r60-section md:pt-section px-10px">
+      <h2 class="font-literata text-r-title sm:text-4xl lg:text-title  mb-r-title md:mb-title text-center">
+        nossos serviços<span class="text-v1">.</span>
+      </h2>
+      <ul class="grid grid-cols-columns-card sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 text-center justify-items-center">
+        <li class="sm:ml-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
+          <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="pen-tool"></i>
+          <h3 class="font-semibold text-xl">Escolha seu estilo</h3>
+          <p class="text-e1">Modelos personalizados para todos os gostos</p>
+        </li>
+        <li class="sm:mr-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
+          <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="share"></i>
+
+          <h3 class="font-semibold text-xl">Compartilhe com facilidade</h3>
+          <p class="text-e1">Convites compartilháveis em um clique</p>
+        </li>
+        <li class="sm:ml-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
+          <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="repeat"></i>
+
+          <h3 class="font-semibold text-xl">Confirmações em tempo real</h3>
+          <p class="text-e1">Gerencie confirmações instantaneamente</p>
+        </li>
+        <li class="sm:mr-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
+          <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="gift"></i>
+
+          <h3 class="font-semibold text-xl">Facilite presentes</h3>
+          <p class="text-e1">Sugira e confirme presentes/pix</p>
+        </li>
+      </ul>
+    </section>
+    <section id="about" class=" pt-r60-section md:pt-section overflow-hidden">
+      <div class="bg">
+        <div class="flex max-w-6xl mx-auto">
           <div
-            class="address rounded-t-[4.0625rem] grid justify-items-center p-5 bg-e1 md:inline-block sm:content-center sm:rounded-none sm:rounded-l-[4.0625rem] md:p-16"
-          >
-            <h3 class="mb-7 sm:mb-[3.75rem] text-lg font-semibold">
-              Suporte Online
-            </h3>
-            <ul class="grid gap-8" title="Endereços">
-              <li class="flex gap-2">
-                <i data-feather="map-pin"></i>
-                <ul>
-                  <li>
-                    <p>Rua Ali Perto, 35 Láctea</p>
-                  </li>
-                  <li>
-                    <p>Rio de Janeiro - RJ</p>
-                  </li>
-                  <li>
-                    <p>Brasil - Terra - Vita</p>
-                  </li>
-                </ul>
-              </li>
+            class="bg-c3 px-5 py-8 max-w-full sm:max-w-2xl lg:max-w-3xl md:py-20 md:pr-[6.25rem] rounded-r-[4.375rem] md:pl-[10px]">
+            <h2 class="font-literata text-r-title sm:text-4xl lg:text-title text-left mb-r-title md:mb-title">
+              sobre noivite<span class="text-v1">.</span>
+            </h2>
+            <p class="text-base sm:text-2xl text-e1 mb-8">
+              Noivite nasceu da paixão de Samilis, uma entusiasta de
+              tecnologia e romântica. Inspirada durante uma caminhada à
+              beira-mar, ela criou um aplicativo para simplificar o
+              planejamento de casamentos. Com convites digitais e gestão de
+              convidados intuitiva, Noivite rapidamente se tornou um sucesso,
+              ajudando casais a celebrar seu amor de maneira mágica e sem
+              estresse.
+            </p>
+            <a class="button text-sm md:text-base" href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
+          </div>
+          <figure class="relative grid">
+            <img class="decoration-1 hidden lg:inline-block" src="./img/decoracao3.png"
+              alt="recém casados se beijando" />
 
-              <li class="flex gap-2">
-                <i data-feather="mail"></i>
-                <ul>
-                  <li>
-                    <p>contato@noivite.com</p>
-                  </li>
-                  <li>
-                    <p>suporte@noivite.com</p>
-                  </li>
-                </ul>
-              </li>
-              <li class="flex gap-2">
-                <i data-feather="phone"></i>
-                <p>+55 91 9999-9999</p>
-              </li>
+            <img class="decoration-2 hidden r-800:inline-block" src="./img/decoracao4.png" alt="recém casados" />
 
-              <ul class="flex gap-8 justify-center" title="Redes sociais">
+            <img class="decoration-3 hidden lg:inline-block" src="./img/decoracao2.png"
+              alt="recém casados de mãos dada" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="max-w-4xl mx-auto  pt-r60-section md:pt-section px-10px">
+      <h2 class="font-literata text-r-title sm:text-title text-center mb-r-title md:mb-title">
+        nosso contato<span class="text-v1">.</span>
+      </h2>
+
+      <div class="flex-row sm:flex">
+        <div
+          class="address rounded-t-[4.0625rem] grid justify-items-center p-5 bg-e1 md:inline-block sm:content-center sm:rounded-none sm:rounded-l-[4.0625rem] md:p-16">
+          <h3 class="mb-7 sm:mb-[3.75rem] text-lg font-semibold">
+            Suporte Online
+          </h3>
+          <ul class="grid gap-8" title="Endereços">
+            <li class="flex gap-2">
+              <i data-feather="map-pin"></i>
+              <ul>
                 <li>
-                  <a href="#"
-                    ><i class="hover:stroke-c1" data-feather="instagram"></i
-                  ></a>
+                  <p>Rua Ali Perto, 35 Láctea</p>
                 </li>
                 <li>
-                  <a href="#"
-                    ><i class="hover:stroke-c1" data-feather="facebook"></i
-                  ></a>
+                  <p>Rio de Janeiro - RJ</p>
                 </li>
                 <li>
-                  <a href="#"
-                    ><i class="hover:stroke-c1" data-feather="youtube"></i
-                  ></a>
+                  <p>Brasil - Terra - Vita</p>
                 </li>
               </ul>
-            </ul>
-          </div>
+            </li>
 
-          <form
-            class="grid gap-6 rounded-b-[4.0625rem] py-5 md:py-12 px-11 border-4 border-c3 sm:rounded-none sm:rounded-e-[4.0625rem] w-full"
-          >
-            <div class="grid lg:grid-cols-2 gap-5 flex-wrap">
-              <fieldset class="grid gap-1 w-full">
-                <label
-                  class="text-f1 font-semibold text-base sm:text-xl"
-                  for="name"
-                  >Nome</label
-                >
-                <input
-                  class="p-3 rounded-2xl"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Seu nome"
-                  required
-                />
-              </fieldset>
-              <fieldset class="grid gap-1">
-                <label
-                  class="text-f1 font-semibold text-base sm:text-xl"
-                  for="phone"
-                  >Telefone</label
-                >
-                <input
-                  class="p-3 rounded-2xl"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="(91) 9999-9999"
-                />
-              </fieldset>
-            </div>
-            <fieldset class="grid gap-1">
-              <label
-                class="text-f1 font-semibold text-base sm:text-xl"
-                for="email"
-                >Email</label
-              >
-              <input
-                class="p-3 rounded-2xl"
-                type="email"
-                name="email"
-                autocomplete="email"
-                id="email"
-                placeholder="contato@email.com"
-                required
-              />
-            </fieldset>
-            <fieldset class="grid gap-1">
-              <label
-                class="text-f1 font-semibold text-base sm:text-xl"
-                for="message"
-                >Mensagem</label
-              >
-              <textarea
-                class="p-3 rounded-2xl resize-none"
-                name="message"
-                id="message"
-                placeholder="O que você precisa?"
-                rows="4"
-                required
-              ></textarea>
-            </fieldset>
-            <button id="form-button" class="button" type="submit" disabled>
-              ENVIAR MENSAGEM
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer id="footer" class="bg-c3 mt-r-footer md:mt-footer">
-      <div class="max-w-6xl mx-auto flex justify-between py-12 px-10px">
-        <p class="font-literata text-2xl sm:text-[40px] font-semibold">
-          noivite<span class="text-v1">.</span>
-        </p>
-        <div class="content-footer">
-          <h3 class="font-literata text-base sm:text-2xl font-semibold">
-            Contato
-          </h3>
-          <p class="border-b-4 border-c2 py-3 text-sm sm:text-base">
-            +55 21 9999-9999 <br />
-            contato@noivite.com <br />
-          </p>
-          <p class="border-b-4 border-c2 py-3 mb-3 text-sm sm:text-base">
-            Rua Ali Perto, 37 - Botafogo <br />
-            Capanema - PA
-          </p>
-          <ul class="flex gap-8">
-            <li>
-              <a href="#"
-                ><i class="hover:stroke-c1" data-feather="instagram"></i
-              ></a>
+            <li class="flex gap-2">
+              <i data-feather="mail"></i>
+              <ul>
+                <li>
+                  <p>contato@noivite.com</p>
+                </li>
+                <li>
+                  <p>suporte@noivite.com</p>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#">
-                <i class="hover:stroke-c1" data-feather="facebook"></i>
-              </a>
+            <li class="flex gap-2">
+              <i data-feather="phone"></i>
+              <p>+55 91 9999-9999</p>
             </li>
-            <li>
-              <a href="#">
-                <i class="hover:stroke-c1" data-feather="youtube"></i>
-              </a>
-            </li>
+
+            <ul class="flex gap-8 justify-center" title="Redes sociais">
+              <li>
+                <a href="#"><i class="hover:stroke-c1" data-feather="instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="hover:stroke-c1" data-feather="facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="hover:stroke-c1" data-feather="youtube"></i></a>
+              </li>
+            </ul>
           </ul>
         </div>
-        <img
-          class="hidden md:inline-block"
-          width="336"
-          src="./img/logo.svg"
-          alt="logo do noivite"
-        />
+
+        <form id="form-contact"
+          class="grid gap-6 rounded-b-[4.0625rem] py-5 px-3 md:py-12 sm:px-11 border-4 border-c3 sm:rounded-none sm:rounded-e-[4.0625rem] w-full">
+          <div class="grid lg:grid-cols-2 gap-5 flex-wrap">
+            <fieldset class="grid gap-1 w-full">
+              <label class="text-f1 font-semibold text-base sm:text-xl" for="name">Nome</label>
+              <input class="p-3 rounded-2xl" type="text" name="name" id="name" placeholder="Seu nome" required />
+            </fieldset>
+            <fieldset class="grid gap-1">
+              <label class="text-f1 font-semibold text-base sm:text-xl" for="phone">Telefone</label>
+              <input class="p-3 rounded-2xl" type="tel" name="phone" id="phone" placeholder="(91) 9999-9999" />
+            </fieldset>
+          </div>
+          <fieldset class="grid gap-1">
+            <label class="text-f1 font-semibold text-base sm:text-xl" for="email">Email</label>
+            <input class="p-3 rounded-2xl" type="email" name="email" autocomplete="email" id="email"
+              placeholder="contato@email.com" required />
+          </fieldset>
+          <fieldset class="grid gap-1">
+            <label class="text-f1 font-semibold text-base sm:text-xl" for="message">Mensagem</label>
+            <textarea class="p-3 rounded-2xl resize-none" name="message" id="message" placeholder="O que você precisa?"
+              rows="4" required></textarea>
+          </fieldset>
+          <button id="form-button" class="button text-sm md:text-base disabled:bg-e2 disabled:cursor-not-allowed" type="submit" disabled>
+            ENVIAR MENSAGEM
+          </button>
+        </form>
       </div>
-      <p class="text-sm sm:text-base text-center py-5 border-t-4 border-t-c2">
-        © Copyright 2023. noivite. Todos os direitos reservados. Pará, Brasil.
+    </section>
+  </main>
+  <footer id="footer" class="bg-c3 mt-r60-footer md:mt-footer">
+    <div class="max-w-6xl mx-auto flex justify-between py-12 px-10px">
+      <p class="font-literata text-2xl sm:text-[40px] font-semibold">
+        noivite<span class="text-v1">.</span>
       </p>
-    </footer>
-    <script src="./script.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace();
-    </script>
-  </body>
+      <div class="content-footer">
+        <h3 class="font-literata text-base sm:text-2xl font-semibold">
+          Contato
+        </h3>
+        <p class="border-b-4 border-c2 py-3 text-sm sm:text-base">
+          +55 21 9999-9999 <br />
+          contato@noivite.com <br />
+        </p>
+        <p class="border-b-4 border-c2 py-3 mb-3 text-sm sm:text-base">
+          Rua Ali Perto, 37 - Botafogo <br />
+          Capanema - PA
+        </p>
+        <ul class="flex gap-8">
+          <li>
+            <a href="#"><i class="hover:stroke-c1" data-feather="instagram"></i></a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="hover:stroke-c1" data-feather="facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="hover:stroke-c1" data-feather="youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <img class="hidden md:inline-block" width="336" src="./img/logo.svg" alt="logo do noivite" />
+    </div>
+    <p class="text-sm sm:text-base text-center py-5 border-t-4 border-t-c2">
+      © Copyright 2023. noivite. Todos os direitos reservados. Pará, Brasil.
+    </p>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+
 </html>
