@@ -4,6 +4,8 @@ const inputName = document.getElementById("name");
 const inputPhone = document.getElementById("phone");
 const inputEmail = document.getElementById("email");
 const inputMessage = document.getElementById("message");
+const btnMobile = document.getElementById("btn-mobile");
+const menuItem = document.querySelectorAll("#menu .p-2");
 
 function checkRequiredInputs() {
   const nameFilled = inputName.value.trim() !== "";
@@ -36,3 +38,25 @@ form.addEventListener("submit", (e) => {
     document.body.removeChild(modal);
   }, 2000);
 });
+
+function toggleMenu(event) {
+  const menu = document.getElementById("menu");
+
+  if (btnMobile.textContent === "menu") {
+    btnMobile.textContent = "close";
+    menu.classList.replace("hidden", "block");
+    event.currentTarget.setAttribute("aria-expanded", "true");
+    event.currentTarget.setAttribute("aria-label", "abrir menu");
+  } else {
+    btnMobile.textContent = "menu";
+    menu.classList.replace("block", "hidden");
+    event.currentTarget.setAttribute("aria-expanded", "false");
+    event.currentTarget.setAttribute("aria-label", "fechar menu");
+  }
+}
+
+btnMobile.addEventListener("click", (e) => toggleMenu(e));
+
+menuItem.forEach((item, i) =>
+  menuItem[i].addEventListener("click", (e) => toggleMenu(e))
+);
