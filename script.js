@@ -63,6 +63,7 @@ function handleLight(modal) {
   modal && handleCloseModal();
 }
 
+
 function handleDark(modal) {
   toggleDarkMode.textContent = "dark_mode";
   document.documentElement.classList.add("dark");
