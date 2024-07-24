@@ -6,6 +6,7 @@ const inputEmail = document.getElementById("email");
 const inputMessage = document.getElementById("message");
 const btnMobile = document.getElementById("btn-mobile");
 const menuItem = document.querySelectorAll("#menu .p-2");
+const toggleDarkMode = document.getElementById("toggleDarkMode");
 
 function checkRequiredInputs() {
   const nameFilled = inputName.value.trim() !== "";
@@ -39,7 +40,7 @@ form.addEventListener("submit", (e) => {
   }, 2000);
 });
 
-function toggleMenu(event) {
+function handleToggleMenu(event) {
   const menu = document.getElementById("menu");
 
   if (btnMobile.textContent === "menu") {
@@ -55,8 +56,50 @@ function toggleMenu(event) {
   }
 }
 
-btnMobile.addEventListener("click", (e) => toggleMenu(e));
+function handleLight() {
+  document.documentElement.classList.remove("dark");
+  handleCloseModal();
+}
+function handleDark() {
+  document.documentElement.classList.add("dark");
+  handleCloseModal();
+}
+
+function handleSystem() {
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? document.documentElement.classList.add("dark")
+    : document.documentElement.classList.remove("dark");
+}
+
+function handleOpenModal() {
+  modal = document.createElement("ul");
+  modal.id = "modeOptions";
+  modal.className =
+    "grid  fixed bottom-16 right-3 p-2 bg-f1 text-white rounded z-50";
+  modal.innerHTML = `<li class="rounded-full hover:bg-e2 p-1 text-c3 material-symbols-outlined">light_mode</li>
+    <li class="rounded-full hover:bg-e2 p-1 text-c3 material-symbols-outlined">dark_mode</li>
+    <li class="rounded-full hover:bg-e2 p-1 text-c3 material-symbols-outlined">computer</li>`;
+  document.body.appendChild(modal);
+
+  const themeItems = document.querySelectorAll("#modeOptions li");
+
+  themeItems[0].addEventListener("click", () => handleLight());
+  themeItems[1].addEventListener("click", () => handleDark());
+  themeItems[2].addEventListener("click", () => handleSystem());
+}
+
+function handleCloseModal() {
+  document.body.removeChild(modeOptions);
+}
+
+btnMobile.addEventListener("click", (e) => handleToggleMenu(e));
 
 menuItem.forEach((item, i) =>
-  menuItem[i].addEventListener("click", (e) => toggleMenu(e))
+  menuItem[i].addEventListener("click", (e) => handleToggleMenu(e))
+);
+
+toggleDarkMode.addEventListener("click", () =>
+  document.getElementById("modeOptions")
+    ? handleCloseModal()
+    : handleOpenModal()
 );
