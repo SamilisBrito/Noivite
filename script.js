@@ -70,11 +70,12 @@ function handleDark(modal) {
   modal && handleCloseModal();
 }
 
-function handleSystem() {
+function handleSystem(modal) {
   const prefersDarkScheme = window.matchMedia(
     "(prefers-color-scheme: dark)"
   ).matches;
-  prefersDarkScheme ? handleDark() : handleLight();
+  prefersDarkScheme ? handleDark(modal) : handleLight(modal);
+  localStorage.setItem("theme", "computer");
   toggleDarkMode.textContent = "computer";
 }
 
@@ -92,7 +93,7 @@ function handleOpenModal() {
 
   themeItems[0].addEventListener("click", () => handleLight(modal));
   themeItems[1].addEventListener("click", () => handleDark(modal));
-  themeItems[2].addEventListener("click", () => handleSystem());
+  themeItems[2].addEventListener("click", () => handleSystem(modal));
 }
 
 function handleCloseModal() {
@@ -105,7 +106,15 @@ menuItem.forEach((item, i) =>
   menuItem[i].addEventListener("click", (e) => handleToggleMenu(e))
 );
 
-localStorage.getItem("theme") === null ? handleLight() : handleSystem();
+const local = localStorage.getItem("theme");
+
+if (local === null) {
+  handleLight();
+} else if (local === "dark") {
+  handleDark();
+} else {
+  handleSystem();
+}
 
 toggleDarkMode.addEventListener("click", () =>
   document.getElementById("modeOptions")
