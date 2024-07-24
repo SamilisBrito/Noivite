@@ -56,19 +56,26 @@ function handleToggleMenu(event) {
   }
 }
 
-function handleLight() {
+function handleLight(modal) {
+  toggleDarkMode.textContent = "light_mode";
   document.documentElement.classList.remove("dark");
-  handleCloseModal();
+  localStorage.removeItem("theme");
+  modal && handleCloseModal();
 }
-function handleDark() {
+
+function handleDark(modal) {
+  toggleDarkMode.textContent = "dark_mode";
   document.documentElement.classList.add("dark");
-  handleCloseModal();
+  localStorage.setItem("theme", "dark");
+  modal && handleCloseModal();
 }
 
 function handleSystem() {
-  window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? document.documentElement.classList.add("dark")
-    : document.documentElement.classList.remove("dark");
+  const prefersDarkScheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  prefersDarkScheme ? handleDark() : handleLight();
+  toggleDarkMode.textContent = "computer";
 }
 
 function handleOpenModal() {
@@ -83,8 +90,8 @@ function handleOpenModal() {
 
   const themeItems = document.querySelectorAll("#modeOptions li");
 
-  themeItems[0].addEventListener("click", () => handleLight());
-  themeItems[1].addEventListener("click", () => handleDark());
+  themeItems[0].addEventListener("click", () => handleLight(modal));
+  themeItems[1].addEventListener("click", () => handleDark(modal));
   themeItems[2].addEventListener("click", () => handleSystem());
 }
 
@@ -97,6 +104,8 @@ btnMobile.addEventListener("click", (e) => handleToggleMenu(e));
 menuItem.forEach((item, i) =>
   menuItem[i].addEventListener("click", (e) => handleToggleMenu(e))
 );
+
+localStorage.getItem("theme") === null ? handleLight() : handleSystem();
 
 toggleDarkMode.addEventListener("click", () =>
   document.getElementById("modeOptions")
