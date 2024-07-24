@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      darkMode: "class",
       theme: {
         extend: {
           fontSize: {
@@ -74,15 +75,15 @@
   <title>Noivite.</title>
 </head>
 
-<body>
+<body class=" bg-c2 dark:bg-e1">
   <header class="fixed left-0 right-0 bg-c2 z-10">
     <div class="sm:max-w-6xl sm:w-full sm:mx-auto flex justify-between sm:items-center py-5 mx-[10px]">
       <a class="font-literata text-2xl sm:text-[40px] font-semibold" href="#">
         noivite<span class="text-v1">.</span>
       </a>
       <nav id="nav">
-        <button id="btn-mobile" class="sm:hidden material-symbols-outlined" aria-label="abrir menu"
-          aria-haspopup="true" aria-controls="menu" aria-expanded="false">menu</button>
+        <button id="btn-mobile" class="sm:hidden material-symbols-outlined" aria-label="abrir menu" aria-haspopup="true"
+          aria-controls="menu" aria-expanded="false">menu</button>
         <ul id="menu" role="menu"
           class="hidden sm:flex text-lg font-medium bg-c2 sm:bg-transparent absolute sm:static w-full sm:w-auto top-[4.625rem] sm:top-0 left-0 h-[calc(100vh)] sm:h-auto transition duration-600 z-50">
           <li class="p-2" role="menuitem">
@@ -99,7 +100,10 @@
     </div>
   </header>
 
-  <main>
+  <button id="toggleDarkMode"
+    class="fixed bottom-4 right-4 p-2 bg-f1 text-white rounded-full z-50 material-symbols-outlined">dark_mode</button>
+
+  <main class="pt-[5.25rem]">
     <section id="hero" class="bg-c3 py-9">
       <div class="max-w-7xl w-full mx-auto px-[10px] grid md:grid-cols-4 md:gap-5 lg:grid-cols-[1fr 3fr 3fr 1fr]">
         <div class="max-w-4xl mx-auto grid justify-items-center gap-8 col-start-2 col-span-2">
@@ -320,6 +324,7 @@
   <script>
     feather.replace();
   </script>
+
 </body>
 
 </html>
