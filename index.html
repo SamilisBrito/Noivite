@@ -30,13 +30,9 @@
           },
           borderRadius: {
             forty: "2.5rem",
-          },
-          // gridTemplateColumns: {
-          //   "columns-card": "repeat(auto-fit, minmax(13.75rem, 1fr))",
-          // },
-          backgroundImage: {
-            "bg-about":
-              "linear-gradient(to left, var(--c2) 58%, var(--c3) 0)",
+          }, gradientColorStopPositions: {
+            58: '58%',
+            0: "0%"
           },
           colors: {
             clifford: "#da373d",
@@ -76,23 +72,23 @@
 </head>
 
 <body class=" bg-c2 dark:bg-e1">
-  <header class="fixed left-0 right-0 bg-c2 z-10">
+  <header class="fixed left-0 right-0 bg-c2 dark:bg-e1 z-10">
     <div class="sm:max-w-6xl sm:w-full sm:mx-auto flex justify-between sm:items-center py-5 mx-[10px]">
-      <a class="font-literata text-2xl sm:text-[40px] font-semibold" href="#">
+      <a class="font-literata text-2xl sm:text-[40px] font-semibold dark:text-c3" href="#">
         noivite<span class="text-v1">.</span>
       </a>
       <nav id="nav">
-        <button id="btn-mobile" class="sm:hidden material-symbols-outlined" aria-label="abrir menu" aria-haspopup="true"
+        <button id="btn-mobile" class="sm:hidden material-symbols-outlined dark:text-c3" aria-label="abrir menu" aria-haspopup="true"
           aria-controls="menu" aria-expanded="false">menu</button>
         <ul id="menu" role="menu"
           class="hidden sm:flex text-lg font-medium bg-c2 sm:bg-transparent absolute sm:static w-full sm:w-auto top-[4.625rem] sm:top-0 left-0 h-[calc(100vh)] sm:h-auto transition duration-600 z-50">
-          <li class="p-2" role="menuitem">
+          <li class="p-2 dark:text-c3" role="menuitem">
             <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#services">Serviços</a>
           </li>
-          <li class="p-2" role="menuitem">
+          <li class="p-2 dark:text-c3" role="menuitem">
             <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#about">Sobre</a>
           </li>
-          <li class="p-2" role="menuitem">
+          <li class="p-2 dark:text-c3" role="menuitem">
             <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#contact">Contato</a>
           </li>
         </ul>
@@ -101,20 +97,21 @@
   </header>
 
   <button id="toggleDarkMode"
-    class="fixed bottom-4 right-4 p-2 bg-f1 text-white rounded-full z-50 material-symbols-outlined">dark_mode</button>
+    class="fixed bottom-4 right-4 p-2 bg-f1 text-white rounded-full z-50 material-symbols-outlined dark:text-c3">dark_mode</button>
 
   <main class="pt-[5.25rem]">
-    <section id="hero" class="bg-c3 py-9">
+    <section id="hero" class="bg-c3 dark:bg-f1  py-9">
       <div class="max-w-7xl w-full mx-auto px-[10px] grid md:grid-cols-4 md:gap-5 lg:grid-cols-[1fr 3fr 3fr 1fr]">
         <div class="max-w-4xl mx-auto grid justify-items-center gap-8 col-start-2 col-span-2">
-          <h1 class="text-r-title sm:text-4xl lg:text-title font-literata text-center">
+          <h1 class="dark:text-c3 text-r-title sm:text-4xl lg:text-title font-literata text-center">
             Convites especiais para o dia mais importante da sua vida<span class="text-v1">.</span>
           </h1>
-          <p class="sm:text-2xl text-center">
+          <p class="sm:text-2xl text-center dark:text-c3">
             O nosso objetivo é fazer com que a sua experiência de planejamento
             do casamento seja agradável
           </p>
-          <a class="button text-sm md:text-base" href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
+          <a class="inline-block py-4 px-8 bg-e1 text-c3 rounded-full font-semibold hover:bg-e2 hover:cursor-pointer dark:bg-c2 dark:text-f1 dark:hover:bg-c3/70 text-sm md:text-base"
+            href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
         </div>
 
         <img class="img1 hidden md:inline-block rounded-full col-start-1 row-start-1 mt-auto mb-auto"
@@ -131,45 +128,46 @@
       </div>
     </section>
     <section id="services" class="max-w-6xl mx-auto  pt-r60-section md:pt-section px-10px">
-      <h2 class="font-literata text-r-title sm:text-4xl lg:text-title  mb-r-title md:mb-title text-center">
+      <h2 class="font-literata text-r-title sm:text-4xl lg:text-title  mb-r-title md:mb-title text-center dark:text-c3">
         nossos serviços<span class="text-v1">.</span>
       </h2>
       <ul
         class="grid grid-cols-columns-card sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 text-center justify-items-center">
-        <li class="sm:ml-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
+        <li class="dark:bg-f1 sm:ml-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
           <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="pen-tool"></i>
-          <h3 class="font-semibold text-xl">Escolha seu estilo</h3>
-          <p class="text-e1">Modelos personalizados para todos os gostos</p>
+          <h3 class="font-semibold text-xl dark:text-c3">Escolha seu estilo</h3>
+          <p class="text-e1 dark:text-c3/70 ">Modelos personalizados para todos os gostos</p>
         </li>
-        <li class="sm:mr-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
+        <li class="dark:bg-f1 sm:mr-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
           <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="share"></i>
 
-          <h3 class="font-semibold text-xl">Compartilhe com facilidade</h3>
-          <p class="text-e1">Convites compartilháveis em um clique</p>
+          <h3 class="font-semibold text-xl dark:text-c3">Compartilhe com facilidade</h3>
+          <p class="text-e1 dark:text-c3/70">Convites compartilháveis em um clique</p>
         </li>
-        <li class="sm:ml-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
+        <li class="dark:bg-f1 sm:ml-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
           <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="repeat"></i>
 
-          <h3 class="font-semibold text-xl">Confirmações em tempo real</h3>
-          <p class="text-e1">Gerencie confirmações instantaneamente</p>
+          <h3 class="font-semibold text-xl dark:text-c3">Confirmações em tempo real</h3>
+          <p class="text-e1 dark:text-c3/70">Gerencie confirmações instantaneamente</p>
         </li>
-        <li class="sm:mr-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
+        <li class="dark:bg-f1 sm:mr-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
           <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="gift"></i>
 
-          <h3 class="font-semibold text-xl">Facilite presentes</h3>
-          <p class="text-e1">Sugira e confirme presentes/pix</p>
+          <h3 class="font-semibold text-xl dark:text-c3">Facilite presentes</h3>
+          <p class="text-e1 dark:text-c3/70">Sugira e confirme presentes/pix</p>
         </li>
       </ul>
     </section>
-    <section id="about" class=" pt-r60-section md:pt-section overflow-hidden">
-      <div class="bg">
+    <section id="about" class="pt-r60-section md:pt-section overflow-hidden">
+      <div class="bg-gradient-to-l dark:from-e1 from-c2  dark:from-50% dark:to-f1 to-c3 dark:to-0%  ">
         <div class="flex max-w-6xl mx-auto">
           <div
-            class="bg-c3 px-5 py-8 max-w-full sm:max-w-2xl lg:max-w-3xl md:py-20 md:pr-[6.25rem] rounded-r-[4.375rem] md:pl-[10px]">
-            <h2 class="font-literata text-r-title sm:text-4xl lg:text-title text-left mb-r-title md:mb-title">
+            class="bg-c3 dark:bg-f1 px-5 py-8 max-w-full sm:max-w-2xl lg:max-w-3xl md:py-20 md:pr-[6.25rem] rounded-r-[4.375rem] md:pl-[10px]">
+            <h2
+              class="font-literata text-r-title sm:text-4xl lg:text-title text-left mb-r-title md:mb-title dark:text-c3">
               sobre noivite<span class="text-v1">.</span>
             </h2>
-            <p class="text-base sm:text-2xl text-e1 mb-8">
+            <p class=" text-base sm:text-2xl sm:leading-10 text-e1 mb-8 dark:text-c3/70">
               Noivite nasceu da paixão de Samilis, uma entusiasta de
               tecnologia e romântica. Inspirada durante uma caminhada à
               beira-mar, ela criou um aplicativo para simplificar o
@@ -178,7 +176,8 @@
               ajudando casais a celebrar seu amor de maneira mágica e sem
               estresse.
             </p>
-            <a class="button text-sm md:text-base" href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
+            <a class="inline-block py-4 px-8 bg-e1 text-c3 rounded-full font-semibold hover:bg-e2 hover:cursor-pointer dark:bg-c2 dark:text-f1 dark:hover:bg-c3/70 text-sm md:text-base"
+              href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
           </div>
           <figure class="relative grid">
             <img class="decoration-1 hidden lg:inline-block" src="./img/decoracao3.png"
@@ -193,85 +192,89 @@
       </div>
     </section>
     <section id="contact" class="max-w-4xl mx-auto  pt-r60-section md:pt-section px-10px">
-      <h2 class="font-literata text-r-title sm:text-title text-center mb-r-title md:mb-title">
+      <h2 class="font-literata text-r-title sm:text-title text-center mb-r-title md:mb-title dark:text-c3">
         nosso contato<span class="text-v1">.</span>
       </h2>
 
       <div class="flex-row sm:flex">
         <div
-          class="address rounded-t-[4.0625rem] grid justify-items-center p-5 bg-e1 md:inline-block sm:content-center sm:rounded-none sm:rounded-l-[4.0625rem] md:p-16">
-          <h3 class="mb-7 sm:mb-[3.75rem] text-lg font-semibold">
+          class="dark:address-dark rounded-t-[4.0625rem] grid justify-items-center p-5 bg-e1 dark:bg-c2 md:inline-block sm:content-center sm:rounded-none sm:rounded-l-[4.0625rem] md:p-16">
+          <h3 class="text-c3 dark:text-f1 mb-7 sm:mb-[3.75rem] text-lg font-semibold">
             Suporte Online
           </h3>
           <ul class="grid gap-8" title="Endereços">
-            <li class="flex gap-2">
-              <i data-feather="map-pin"></i>
+            <li class="flex gap-2 ">
+              <i data-feather="map-pin" class="stroke-c3 dark:stroke-f1"></i>
               <ul>
                 <li>
-                  <p>Rua Ali Perto, 35 Láctea</p>
+                  <p class="text-c3 dark:text-f1">Rua Ali Perto, 35 Láctea</p>
                 </li>
                 <li>
-                  <p>Rio de Janeiro - RJ</p>
+                  <p class="text-c3 dark:text-f1">Rio de Janeiro - RJ</p>
                 </li>
                 <li>
-                  <p>Brasil - Terra - Vita</p>
+                  <p class="text-c3 dark:text-f1">Brasil - Terra - Vita</p>
                 </li>
               </ul>
             </li>
 
             <li class="flex gap-2">
-              <i data-feather="mail"></i>
+              <i data-feather="mail" class="stroke-c3 dark:stroke-f1"></i>
               <ul>
                 <li>
-                  <p>contato@noivite.com</p>
+                  <p class="text-c3 dark:text-f1">contato@noivite.com</p>
                 </li>
                 <li>
-                  <p>suporte@noivite.com</p>
+                  <p class="text-c3 dark:text-f1">suporte@noivite.com</p>
                 </li>
               </ul>
             </li>
             <li class="flex gap-2">
-              <i data-feather="phone"></i>
-              <p>+55 91 9999-9999</p>
+              <i data-feather="phone" class="stroke-c3 dark:stroke-f1"></i>
+              <p class="text-c3 dark:text-f1">+55 91 9999-9999</p>
             </li>
 
             <ul class="flex gap-8 justify-center" title="Redes sociais">
               <li>
-                <a href="#"><i class="hover:stroke-c1" data-feather="instagram"></i></a>
+                <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
+                    data-feather="instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="hover:stroke-c1" data-feather="facebook"></i></a>
+                <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
+                    data-feather="facebook"></i></a>
               </li>
               <li>
-                <a href="#"><i class="hover:stroke-c1" data-feather="youtube"></i></a>
+                <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
+                    data-feather="youtube"></i></a>
               </li>
             </ul>
           </ul>
         </div>
 
         <form id="form-contact"
-          class="grid gap-6 rounded-b-[4.0625rem] py-5 px-3 md:py-12 sm:px-11 border-4 border-c3 sm:rounded-none sm:rounded-e-[4.0625rem] w-full">
+          class="grid gap-6 rounded-b-[4.0625rem] py-5 px-3 md:py-12 sm:px-11 border-x-4 border-b-4 sm:border-0 sm:border-y-4 sm:border-r-4 border-c3 dark:border-e2 sm:rounded-none sm:rounded-e-[4.0625rem] w-full">
           <div class="grid lg:grid-cols-2 gap-5 flex-wrap">
             <fieldset class="grid gap-1 w-full">
-              <label class="text-f1 font-semibold text-base sm:text-xl" for="name">Nome</label>
+              <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="name">Nome</label>
               <input class="p-3 rounded-2xl" type="text" name="name" id="name" placeholder="Seu nome" required />
             </fieldset>
             <fieldset class="grid gap-1">
-              <label class="text-f1 font-semibold text-base sm:text-xl" for="phone">Telefone</label>
+              <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="phone">Telefone</label>
               <input class="p-3 rounded-2xl" type="tel" name="phone" id="phone" placeholder="(91) 9999-9999" />
             </fieldset>
           </div>
           <fieldset class="grid gap-1">
-            <label class="text-f1 font-semibold text-base sm:text-xl" for="email">Email</label>
+            <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="email">Email</label>
             <input class="p-3 rounded-2xl" type="email" name="email" autocomplete="email" id="email"
               placeholder="contato@email.com" required />
           </fieldset>
           <fieldset class="grid gap-1">
-            <label class="text-f1 font-semibold text-base sm:text-xl" for="message">Mensagem</label>
+            <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="message">Mensagem</label>
             <textarea class="p-3 rounded-2xl resize-none" name="message" id="message" placeholder="O que você precisa?"
               rows="4" required></textarea>
           </fieldset>
-          <button id="form-button" class="button text-sm md:text-base disabled:bg-e2 disabled:cursor-not-allowed"
+          <button id="form-button"
+            class="inline-block py-4 px-8 bg-e1 text-c3 rounded-full font-semibold hover:bg-e2 hover:cursor-pointer dark:bg-c2 dark:text-f1 dark:hover:bg-c3/70 dark:hover:disabled:bg-c3/70 text-sm md:text-base disabled:bg-e2 disabled:cursor-not-allowed"
             type="submit" disabled>
             ENVIAR MENSAGEM
           </button>
@@ -279,42 +282,42 @@
       </div>
     </section>
   </main>
-  <footer id="footer" class="bg-c3 mt-r60-footer md:mt-footer">
+  <footer id="footer" class="bg-c3 dark:bg-f1 mt-r60-footer md:mt-footer">
     <div class="max-w-6xl mx-auto flex justify-between py-12 px-10px">
-      <p class="font-literata text-2xl sm:text-[40px] font-semibold">
+      <p class="font-literata text-2xl sm:text-[40px] font-semibold dark:text-c3">
         noivite<span class="text-v1">.</span>
       </p>
       <div class="content-footer">
-        <h3 class="font-literata text-base sm:text-2xl font-semibold">
+        <h3 class="font-literata text-base sm:text-2xl font-semibold dark:text-c3">
           Contato
         </h3>
-        <p class="border-b-4 border-c2 py-3 text-sm sm:text-base">
+        <p class="border-b-4 border-c2 dark:border-e1 py-3 text-sm sm:text-base dark:text-c3">
           +55 21 9999-9999 <br />
           contato@noivite.com <br />
         </p>
-        <p class="border-b-4 border-c2 py-3 mb-3 text-sm sm:text-base">
+        <p class="border-b-4 border-c2 dark:border-e1 py-3 mb-3 text-sm sm:text-base dark:text-c3">
           Rua Ali Perto, 37 - Botafogo <br />
           Capanema - PA
         </p>
         <ul class="flex gap-8">
           <li>
-            <a href="#"><i class="hover:stroke-c1" data-feather="instagram"></i></a>
+            <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3" data-feather="instagram"></i></a>
           </li>
           <li>
             <a href="#">
-              <i class="hover:stroke-c1" data-feather="facebook"></i>
+              <i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3" data-feather="facebook"></i>
             </a>
           </li>
           <li>
             <a href="#">
-              <i class="hover:stroke-c1" data-feather="youtube"></i>
+              <i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3" data-feather="youtube"></i>
             </a>
           </li>
         </ul>
       </div>
       <img class="hidden md:inline-block" width="336" src="./img/logo.svg" alt="logo do noivite" />
     </div>
-    <p class="text-sm sm:text-base text-center py-5 border-t-4 border-t-c2">
+    <p class="text-sm sm:text-base text-center py-5 border-t-4 border-t-c2 dark:border-e1">
       © Copyright 2023. noivite. Todos os direitos reservados. Pará, Brasil.
     </p>
   </footer>
