@@ -1,11 +1,5 @@
 :root {
-  --c1: #ecc9a3;
-  --c2: #fdecd2;
-  --c3: #faf2e6;
   --v1: #8fb27c;
-  --v2: #bbcf9a;
-  --e1: #709a94;
-  --e2: #a0bcae;
   --f1: #235560;
 }
 
@@ -15,28 +9,9 @@
   text-decoration: none;
 }
 
-.address * {
-  color: var(--c3);
-}
-
 :focus-visible {
   outline: transparent;
   box-shadow: 0 0 0 0.125rem var(--v1);
-}
-
-.button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: var(--e1);
-  color: var(--c3);
-  border-radius: 1.875rem;
-  border: 0.0625rem solid transparent;
-  font-weight: 600;
-}
-
-.button:hover {
-  background-color: var(--e2);
-  cursor: pointer;
 }
 
 .img1 {
@@ -57,11 +32,6 @@
 .img4 {
   animation: imageinput4 2s ease-in-out forwards,
     slide-up-loop 10s ease-in-out infinite;
-}
-
-.bg {
-  background-color: var(--c3);
-  background-image: linear-gradient(to left, var(--c2) 58%, var(--c3) 0);
 }
 
 .decoration-1 {
