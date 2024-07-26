@@ -84,10 +84,10 @@ function handleOpenModal() {
   modal = document.createElement("ul");
   modal.id = "modeOptions";
   modal.className =
-    "grid  fixed bottom-16 right-3 p-2 bg-f1 text-white rounded z-50";
-  modal.innerHTML = `<li class="rounded-full hover:bg-e2 p-1 text-c3 material-symbols-outlined">light_mode</li>
-    <li class="rounded-full hover:bg-e2 p-1 text-c3 material-symbols-outlined">dark_mode</li>
-    <li class="rounded-full hover:bg-e2 p-1 text-c3 material-symbols-outlined">computer</li>`;
+    "grid fixed bottom-[4.375rem] sm:bottom-[5.5625rem] right-4 sm:right-6 p-2 bg-f1 text-white rounded z-50 dark:bg-c3";
+  modal.innerHTML = `<li class="text-3xl rounded-full hover:bg-e2 sm:py-1 sm:px-2 text-c3 material-symbols-outlined dark:text-f1">light_mode</li>
+    <li class="text-3xl rounded-full hover:bg-e2 sm:py-1 sm:px-2 text-c3 material-symbols-outlined dark:text-f1">dark_mode</li>
+    <li class="text-3xl rounded-full hover:bg-e2 sm:py-1 sm:px-2 text-c3 material-symbols-outlined dark:text-f1">computer</li>`;
   document.body.appendChild(modal);
 
   const themeItems = document.querySelectorAll("#modeOptions li");
