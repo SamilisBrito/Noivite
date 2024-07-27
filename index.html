@@ -35,7 +35,6 @@
             0: "0%"
           },
           colors: {
-            clifford: "#da373d",
             c1: "#ecc9a3",
             c2: "#fdecd2",
             c3: "#faf2e6",
@@ -59,15 +58,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
-  <!-- <link rel="stylesheet" href="./styles/normalize.css" /> -->
   <link rel="stylesheet" href="./styles/global.css" />
-  <!-- <link rel="stylesheet" href="./styles/header.css" /> -->
-  <!-- <link rel="stylesheet" href="./styles/hero.css" /> -->
-  <!-- <link rel="stylesheet" href="./styles/services.css" /> -->
-  <!-- <link rel="stylesheet" href="./styles/about.css" /> -->
-  <!-- <link rel="stylesheet" href="./styles/contact.css" /> -->
-  <!-- <link rel="stylesheet" href="./styles/footer.css" /> -->
-  <link rel="stylesheet" href="./styles/modal.css" />
   <title>Noivite.</title>
 </head>
 
@@ -78,8 +69,8 @@
         noivite<span class="text-v1">.</span>
       </a>
       <nav id="nav">
-        <button id="btn-mobile" class="sm:hidden material-symbols-outlined dark:text-c3 p-2" aria-label="abrir menu" aria-haspopup="true"
-          aria-controls="menu" aria-expanded="false">menu</button>
+        <button id="btn-mobile" class="sm:hidden material-symbols-outlined dark:text-c3 p-2" aria-label="abrir menu"
+          aria-haspopup="true" aria-controls="menu" aria-expanded="false">menu</button>
         <ul id="menu" role="menu"
           class="hidden sm:flex text-lg font-medium bg-c2 dark:bg-e1 sm:bg-transparent absolute sm:static w-full sm:w-auto top-[4.625rem] sm:top-0 left-0 h-[calc(100vh)] sm:h-auto transition duration-600 ">
           <li class="p-2 dark:text-c3" role="menuitem">
@@ -98,188 +89,14 @@
 
   <button id="toggleDarkMode"
     class="fixed bottom-4 right-4 p-3 sm:py-4 sm:px-5 bg-f1 sm:text-3xl text-white rounded-full z-30 material-symbols-outlined dark:text-f1 dark:bg-c3">dark_mode</button>
-
   <main class="pt-[5.25rem]">
-    <section id="hero" class="bg-c3 dark:bg-f1  py-9">
-      <div class="max-w-7xl w-full mx-auto px-[10px] grid md:grid-cols-4 md:gap-5 lg:grid-cols-[1fr 3fr 3fr 1fr]">
-        <div class="max-w-4xl mx-auto grid justify-items-center gap-8 col-start-2 col-span-2">
-          <h1 class="dark:text-c3 text-r-title sm:text-4xl lg:text-title font-literata text-center">
-            Convites especiais para o dia mais importante da sua vida<span class="text-v1">.</span>
-          </h1>
-          <p class="sm:text-2xl text-center dark:text-c3">
-            O nosso objetivo é fazer com que a sua experiência de planejamento
-            do casamento seja agradável
-          </p>
-          <a class="inline-block py-4 px-8 bg-e1 text-c3 rounded-full font-semibold hover:bg-e2 hover:cursor-pointer dark:bg-c2 dark:text-f1 dark:hover:bg-c3/70 text-sm md:text-base"
-            href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
-        </div>
-
-        <img class="img1 hidden md:inline-block rounded-full col-start-1 row-start-1 mt-auto mb-auto"
-          src="./img/decoracao1.png" alt="recém casados" />
-
-        <img class="img2 hidden lg:inline-block rounded-full col-start-2 mt-8" src="./img/decoracao2.png"
-          alt="recém casados de mãos dada" />
-
-        <img class="img3 hidden lg:inline-block rounded-full col-start-3 ml-auto" src="./img/decoracao3.png"
-          alt="recém casados se beijando" />
-
-        <img class="img4 hidden md:inline-block rounded-l-full col-start-4 row-start-1 mt-auto mb-auto"
-          src="./img/decoracao4.png" alt="recém casados" />
-      </div>
+    <section id="hero" class="bg-c3 dark:bg-f1 py-9">
     </section>
     <section id="services" class="max-w-6xl mx-auto  pt-r60-section md:pt-section px-10px">
-      <h2 class="font-literata text-r-title sm:text-4xl lg:text-title  mb-r-title md:mb-title text-center dark:text-c3">
-        nossos serviços<span class="text-v1">.</span>
-      </h2>
-      <ul
-        class="grid grid-cols-columns-card sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 text-center justify-items-center">
-        <li class="dark:bg-f1 sm:ml-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
-          <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="pen-tool"></i>
-          <h3 class="font-semibold text-xl dark:text-c3">Escolha seu estilo</h3>
-          <p class="text-e1 dark:text-c3/70 ">Modelos personalizados para todos os gostos</p>
-        </li>
-        <li class="dark:bg-f1 sm:mr-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
-          <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="share"></i>
-
-          <h3 class="font-semibold text-xl dark:text-c3">Compartilhe com facilidade</h3>
-          <p class="text-e1 dark:text-c3/70">Convites compartilháveis em um clique</p>
-        </li>
-        <li class="dark:bg-f1 sm:ml-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
-          <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="repeat"></i>
-
-          <h3 class="font-semibold text-xl dark:text-c3">Confirmações em tempo real</h3>
-          <p class="text-e1 dark:text-c3/70">Gerencie confirmações instantaneamente</p>
-        </li>
-        <li class="dark:bg-f1 sm:mr-auto bg-c3 p-10 rounded-forty grid justify-items-center gap-3 max-w-80">
-          <i class="stroke-e1 h-8 w-8 md:h-16 md:w-16 md:mb-7" data-feather="gift"></i>
-
-          <h3 class="font-semibold text-xl dark:text-c3">Facilite presentes</h3>
-          <p class="text-e1 dark:text-c3/70">Sugira e confirme presentes/pix</p>
-        </li>
-      </ul>
     </section>
     <section id="about" class="pt-r60-section md:pt-section overflow-hidden">
-      <div class="bg-gradient-to-l dark:from-e1 from-c2  dark:from-50% dark:to-f1 to-c3 dark:to-0%  ">
-        <div class="flex max-w-6xl mx-auto">
-          <div
-            class="bg-c3 dark:bg-f1 px-5 py-8 max-w-full sm:max-w-2xl lg:max-w-3xl md:py-20 md:pr-[6.25rem] rounded-r-[4.375rem] md:pl-[10px]">
-            <h2
-              class="font-literata text-r-title sm:text-4xl lg:text-title text-left mb-r-title md:mb-title dark:text-c3">
-              sobre noivite<span class="text-v1">.</span>
-            </h2>
-            <p class=" text-base sm:text-2xl sm:leading-10 text-e1 mb-8 dark:text-c3/70">
-              Noivite nasceu da paixão de Samilis, uma entusiasta de
-              tecnologia e romântica. Inspirada durante uma caminhada à
-              beira-mar, ela criou um aplicativo para simplificar o
-              planejamento de casamentos. Com convites digitais e gestão de
-              convidados intuitiva, Noivite rapidamente se tornou um sucesso,
-              ajudando casais a celebrar seu amor de maneira mágica e sem
-              estresse.
-            </p>
-            <a class="inline-block py-4 px-8 bg-e1 text-c3 rounded-full font-semibold hover:bg-e2 hover:cursor-pointer dark:bg-c2 dark:text-f1 dark:hover:bg-c3/70 text-sm md:text-base"
-              href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
-          </div>
-          <figure class="relative grid">
-            <img class="decoration-1 hidden lg:inline-block" src="./img/decoracao3.png"
-              alt="recém casados se beijando" />
-
-            <img class="decoration-2 hidden r-800:inline-block" src="./img/decoracao4.png" alt="recém casados" />
-
-            <img class="decoration-3 hidden lg:inline-block" src="./img/decoracao2.png"
-              alt="recém casados de mãos dada" />
-          </figure>
-        </div>
-      </div>
     </section>
     <section id="contact" class="max-w-4xl mx-auto  pt-r60-section md:pt-section px-10px">
-      <h2 class="font-literata text-r-title sm:text-title text-center mb-r-title md:mb-title dark:text-c3">
-        nosso contato<span class="text-v1">.</span>
-      </h2>
-
-      <div class="flex-row sm:flex">
-        <div
-          class="dark:address-dark rounded-t-[4.0625rem] grid justify-items-center p-5 bg-e1 dark:bg-c2 md:inline-block sm:content-center sm:rounded-none sm:rounded-l-[4.0625rem] md:p-16">
-          <h3 class="text-c3 dark:text-f1 mb-7 sm:mb-[3.75rem] text-lg font-semibold">
-            Suporte Online
-          </h3>
-          <ul class="grid gap-8" title="Endereços">
-            <li class="flex gap-2 ">
-              <i data-feather="map-pin" class="stroke-c3 dark:stroke-f1"></i>
-              <ul>
-                <li>
-                  <p class="text-c3 dark:text-f1">Rua Ali Perto, 35 Láctea</p>
-                </li>
-                <li>
-                  <p class="text-c3 dark:text-f1">Rio de Janeiro - RJ</p>
-                </li>
-                <li>
-                  <p class="text-c3 dark:text-f1">Brasil - Terra - Vita</p>
-                </li>
-              </ul>
-            </li>
-
-            <li class="flex gap-2">
-              <i data-feather="mail" class="stroke-c3 dark:stroke-f1"></i>
-              <ul>
-                <li>
-                  <p class="text-c3 dark:text-f1">contato@noivite.com</p>
-                </li>
-                <li>
-                  <p class="text-c3 dark:text-f1">suporte@noivite.com</p>
-                </li>
-              </ul>
-            </li>
-            <li class="flex gap-2">
-              <i data-feather="phone" class="stroke-c3 dark:stroke-f1"></i>
-              <p class="text-c3 dark:text-f1">+55 91 9999-9999</p>
-            </li>
-
-            <ul class="flex gap-8 justify-center" title="Redes sociais">
-              <li>
-                <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
-                    data-feather="instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
-                    data-feather="facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
-                    data-feather="youtube"></i></a>
-              </li>
-            </ul>
-          </ul>
-        </div>
-
-        <form id="form-contact"
-          class="grid gap-6 rounded-b-[4.0625rem] py-5 px-3 md:py-12 sm:px-11 border-x-4 border-b-4 sm:border-0 sm:border-y-4 sm:border-r-4 border-c3 dark:border-e2 sm:rounded-none sm:rounded-e-[4.0625rem] w-full">
-          <div class="grid lg:grid-cols-2 gap-5 flex-wrap">
-            <fieldset class="grid gap-1 w-full">
-              <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="name">Nome</label>
-              <input class="p-3 rounded-2xl" type="text" name="name" id="name" placeholder="Seu nome" required />
-            </fieldset>
-            <fieldset class="grid gap-1">
-              <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="phone">Telefone</label>
-              <input class="p-3 rounded-2xl" type="tel" name="phone" id="phone" placeholder="(91) 9999-9999" />
-            </fieldset>
-          </div>
-          <fieldset class="grid gap-1">
-            <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="email">Email</label>
-            <input class="p-3 rounded-2xl" type="email" name="email" autocomplete="email" id="email"
-              placeholder="contato@email.com" required />
-          </fieldset>
-          <fieldset class="grid gap-1">
-            <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="message">Mensagem</label>
-            <textarea class="p-3 rounded-2xl resize-none" name="message" id="message" placeholder="O que você precisa?"
-              rows="4" required></textarea>
-          </fieldset>
-          <button id="form-button"
-            class="inline-block py-4 px-8 bg-e1 text-c3 rounded-full font-semibold hover:bg-e2 hover:cursor-pointer dark:bg-c2 dark:text-f1 dark:hover:bg-c3/70 dark:disabled:bg-c3/70 text-sm md:text-base disabled:bg-e2 disabled:cursor-not-allowed"
-            type="submit" disabled>
-            ENVIAR MENSAGEM
-          </button>
-        </form>
-      </div>
     </section>
   </main>
   <footer id="footer" class="bg-c3 dark:bg-f1 mt-r60-footer md:mt-footer">
