@@ -1,309 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/hero.css" />
-    <link rel="stylesheet" href="./styles/services.css" />
-    <link rel="stylesheet" href="./styles/about.css" />
-    <link rel="stylesheet" href="./styles/contact.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/modal.css" />
-    <title>Noivite.</title>
-  </head>
-  <body>
-    <header>
-      <div class="content-limit">
-        <a class="logo inline" href="#">noivite<span class="dot">.</span></a>
-        <nav class="nav inline">
-          <ul class="inline nav-list">
-            <li class="inline"><a href="#services">Serviços</a></li>
-            <li class="inline"><a href="#about">Sobre</a></li>
-            <li class="inline"><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section id="hero">
-        <div class="content-limit">
-          <div class="hero-content">
-            <h1>
-              Convites especiais para o dia mais importante da sua vida<span
-                class="dot"
-                >.</span
-              >
-            </h1>
-            <p>
-              O nosso objetivo é fazer com que a sua experiência de planejamento
-              do casamento seja agradável
-            </p>
-            <a class="button inline" href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
-          </div>
 
-          <img class="img1" src="./img/decoracao1.png" alt="recém casados" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontSize: {
+            title: ["3.4375rem", { lineHeight: "4.5rem", fontWeight: "700" }],
+            "r-title": ["1.875rem", { fontWeight: "700" }],
+          },
+          fontFamily: {
+            literata: ['"Literata"', "serif"],
+          },
+          padding: {
+            section: "7.5rem",
+            "r60-section": "3.75rem",
+            "10px": "0.625rem",
+          },
+          margin: {
+            title: "3.75rem",
+            "r-title": "1.875rem",
+            footer: "7.5rem",
+            "r60-footer": "3.75rem",
+          },
+          borderRadius: {
+            forty: "2.5rem",
+          }, gradientColorStopPositions: {
+            58: '58%',
+            0: "0%"
+          },
+          colors: {
+            c1: "#ecc9a3",
+            c2: "#fdecd2",
+            c3: "#faf2e6",
+            v1: "#8fb27c",
+            v2: "#bbcf9a",
+            e1: "#709a94",
+            e2: "#a0bcae",
+            f1: "#235560",
+          },
+          screens: {
+            "r-800": "800px",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <title>Noivite.</title>
+</head>
 
-          <img
-            class="img2"
-            src="./img/decoracao2.png"
-            alt="recém casados de mãos dada"
-          />
+<body class=" bg-c2 dark:bg-e1">
+  <header class="fixed left-0 right-0 bg-c2 dark:bg-e1 z-10">
+    <div class="sm:max-w-6xl sm:w-full sm:mx-auto flex justify-between sm:items-center py-5 mx-[10px]">
+      <a class="font-literata text-2xl sm:text-[40px] font-semibold dark:text-c3" href="#">
+        noivite<span class="text-v1">.</span>
+      </a>
+      <nav id="nav">
+        <button id="btn-mobile" class="sm:hidden material-symbols-outlined dark:text-c3 p-2" aria-label="abrir menu"
+          aria-haspopup="true" aria-controls="menu" aria-expanded="false">menu</button>
+        <ul id="menu" role="menu"
+          class="hidden sm:flex text-lg font-medium bg-c2 dark:bg-e1 sm:bg-transparent absolute sm:static w-full sm:w-auto top-[4.625rem] sm:top-0 left-0 h-[calc(100vh)] sm:h-auto transition duration-600 ">
+          <li class="p-2 dark:text-c3" role="menuitem">
+            <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#services">Serviços</a>
+          </li>
+          <li class="p-2 dark:text-c3" role="menuitem">
+            <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#about">Sobre</a>
+          </li>
+          <li class="p-2 dark:text-c3" role="menuitem">
+            <a class="border-b-4 border-solid border-transparent hover:border-v1" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-          <img
-            class="img3"
-            src="./img/decoracao3.png"
-            alt="recém casados se beijando"
-          />
-
-          <img class="img4" src="./img/decoracao4.png" alt="recém casados" />
-        </div>
-      </section>
-      <section id="services">
-        <div class="content-limit">
-          <h2>nossos serviços<span class="dot">.</span></h2>
-          <ul>
-            <li>
-              <i data-feather="pen-tool"></i>
-              <h3>Escolha seu estilo</h3>
-              <p>Modelos personalizados para todos os gostos</p>
-            </li>
-            <li>
-              <i class="size" data-feather="share"></i>
-
-              <h3>Compartilhe com facilidade</h3>
-              <p>Convites compartilháveis em um clique</p>
-            </li>
-            <li>
-              <i class="size" data-feather="repeat"></i>
-
-              <h3>Confirmações em tempo real</h3>
-              <p>Gerencie confirmações instantaneamente</p>
-            </li>
-            <li class="last">
-              <i class="size" data-feather="gift"></i>
-
-              <h3>Facilite presentes</h3>
-              <p>Sugira e confirme presentes/pix</p>
-            </li>
-            <div class="clear"></div>
-          </ul>
-        </div>
-      </section>
-      <section id="about">
-            <div class="content-about">
-              <table>
-                <tr>
-                  <td class="-mt-4 -mb-4">
-                    <h2>sobre noivite<span class="dot">.</span></h2>
-                    <p>
-                      Noivite nasceu da paixão de Samilis, uma entusiasta de
-                      tecnologia e romântica. Inspirada durante uma caminhada à
-                      beira-mar, ela criou um aplicativo para simplificar o
-                      planejamento de casamentos. Com convites digitais e gestão
-                      de convidados intuitiva, Noivite rapidamente se tornou um
-                      sucesso, ajudando casais a celebrar seu amor de maneira
-                      mágica e sem estresse.
-                    </p>
-                    <a class="button" href="https://noivite.vercel.app/" target="_blank">COMECE AGORA</a>
-                  </td>
-                  <td>
-                    <img
-                      class="decoration-1"
-                      src="./img/decoracao3.png"
-                      alt="recém casados se beijando"
-                    />
-
-                    <img
-                      class="decoration-2"
-                      src="./img/decoracao4.png"
-                      alt="recém casados"
-                    />
-
-                    <img
-                      class="decoration-3"
-                      src="./img/decoracao2.png"
-                      alt="recém casados de mãos dada"
-                    />
-                  </td>
-                </tr>
-              </table>
-            </div>
-      </section>
-      <section id="contact">
-        <div class="container-contact">
-          <h2>nosso contato<span class="dot">.</span></h2>
-          <table>
-            <tr>
-              <div class="content-support-ul">
-                  <td class="content-support">
-                  <h3>Suporte Online</h3>
-                  <table id="address-table" title="Endereços">
-                    <tr>
-                      <td>
-                        <i data-feather="map-pin"></i>
-                      </td>
-                      <td>
-                        <ul>
-                          <li>
-                            <p>Rua Ali Perto, 35 Láctea</p>
-                          </li>
-                          <li>
-                            <p>Rio de Janeiro - RJ</p>
-                          </li>
-                          <li>
-                            <p>Brasil - Terra - Vita</p>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i data-feather="mail"></i>
-                      </td>
-                      <td>
-                        <li>
-                          <p>contato@noivite.com</p>
-                        </li>
-                        <li>
-                          <p>suporte@noivite.com</p>
-                        </li>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i data-feather="phone"></i>
-                      </td>
-                      <td>
-                        <p>+55 91 9999-9999</p>
-                      </td>
-                    </tr>
-                  </table>
-                  <ul title="Redes sociais" class="social-networking">
-                    <li>
-                      <a href="#"><i data-feather="instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i data-feather="facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i data-feather="youtube"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-
-              <td class="form">
-                <form id="form-contact">
-                  <fieldset class="inline">
-                    <label for="name">Nome</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Seu nome"
-                      required
-                    />
-                  </fieldset>
-                  <fieldset class="inline">
-                    <label for="phone">Telefone</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      id="phone"
-                      placeholder="(91) 9999-9999"
-                    />
-                  </fieldset>
-                  <fieldset>
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      autocomplete="email"
-                      id="email"
-                      placeholder="contato@email.com"
-                      required
-                    />
-                  </fieldset>
-                  <fieldset>
-                    <label for="message">Mensagem</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="O que você precisa?"
-                      rows="4"
-                      required
-                    ></textarea>
-                  </fieldset>
-                  <button
-                    id="form-button"
-                    class="button"
-                    type="submit"
-                    disabled
-                  >
-                    ENVIAR MENSAGEM
-                  </button>
-                </form>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </section>
-    </main>
-    <footer id="footer">
-      <div class="content-limit">
-        <div>
-          <p class="logo">noivite<span class="dot">.</span></p>
-          <div class="content-footer">
-            <h3>Contato</h3>
-            <p>
-              +55 21 9999-9999 <br />
-              contato@noivite.com <br />
-            </p>
-            <p>
-              Rua Ali Perto, 37 - Botafogo <br />
-              Capanema - PA
-            </p>
-            <ul class="social-networking">
-              <li>
-                <a href="#"><i data-feather="instagram"></i></a>
-              </li>
-              <li>
-                <a href="#">
-                  <i data-feather="facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i data-feather="youtube"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <img width="336" src="./img/logo.svg" alt="" />
-          <div class="clear"></div>
-        </div>
-      </div>
-      <p class="cop">
-        © Copyright 2023. noivite. Todos os direitos reservados. Pará, Brasil.
+  <button id="toggleDarkMode"
+    class="fixed bottom-4 right-4 p-3 sm:py-4 sm:px-5 bg-f1 sm:text-3xl text-white rounded-full z-30 material-symbols-outlined dark:text-f1 dark:bg-c3">dark_mode</button>
+  <main class="pt-[5.25rem]">
+    <section id="hero" class="bg-c3 dark:bg-f1 py-9">
+    </section>
+    <section id="services" class="max-w-6xl mx-auto  pt-r60-section md:pt-section px-10px">
+    </section>
+    <section id="about" class="pt-r60-section md:pt-section overflow-hidden">
+    </section>
+    <section id="contact" class="max-w-4xl mx-auto  pt-r60-section md:pt-section px-10px">
+    </section>
+  </main>
+  <footer id="footer" class="bg-c3 dark:bg-f1 mt-r60-footer md:mt-footer">
+    <div class="max-w-6xl mx-auto flex justify-between py-12 px-10px">
+      <p class="font-literata text-2xl sm:text-[40px] font-semibold dark:text-c3">
+        noivite<span class="text-v1">.</span>
       </p>
-    </footer>
-    <script src="./script.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace();
-    </script>
-  </body>
+      <div class="content-footer">
+        <h3 class="font-literata text-base sm:text-2xl font-semibold dark:text-c3">
+          Contato
+        </h3>
+        <p class="border-b-4 border-c2 dark:border-e1 py-3 text-sm sm:text-base dark:text-c3">
+          +55 21 9999-9999 <br />
+          contato@noivite.com <br />
+        </p>
+        <p class="border-b-4 border-c2 dark:border-e1 py-3 mb-3 text-sm sm:text-base dark:text-c3">
+          Rua Ali Perto, 37 - Botafogo <br />
+          Capanema - PA
+        </p>
+        <ul class="flex gap-8">
+          <li>
+            <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3" data-feather="instagram"></i></a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3" data-feather="facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3" data-feather="youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <img class="hidden md:inline-block" width="336" src="./img/logo.svg" alt="logo do noivite" />
+    </div>
+    <p class="text-sm sm:text-base text-center py-5 border-t-4 border-t-c2 dark:border-e1">
+      © Copyright 2023. noivite. Todos os direitos reservados. Pará, Brasil.
+    </p>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace();
+  </script>
+
+</body>
+
 </html>

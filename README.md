@@ -1,4 +1,4 @@
-# Noiviti. Exercício 3 do Curso +praTi e Codifica - Dev Full Stack
+# Noiviti. Exercício 4 do Curso +praTi e Codifica - Dev Full Stack
 
 ![preview](./img/presentation.png)
 
@@ -6,20 +6,20 @@
 
 [Click aqui para acessar a prototipação](https://www.figma.com/design/RkhK6jYITEwuxYaVUfO0ju/Landing-page-%2BpraTi?node-id=0-1&t=bHPRoMhBWKh9w9vd-1)
 
-> Desenvolver uma landing page simples utilizando HTML, CSS e JavaScript.
+> Aprimorar o projeto da atividade 03 com todo o conhecimento adquirido (e prévio, se houver). Faça o seu melhor.
 
 [Click aqui para acessar landing page](https://samilisbrito.github.io/exercicio-3-mais-pra-TI-Landing-page/)
 
-## CONTEÚDO MÍNIMO DA LANDING PAGE:
+## NOVAS FEATURES (NO MÍNIMO ESSAS):
 
-- Configure um repositório Git para o projeto.
-- Crie duas branches: uma principal (main) e outra de desenvolvimento (develop).
-- Um cabeçalho com o nome do projeto.
-- Uma breve descrição ou slogan.
-- Um botão de chamada para ação como "Saiba Mais" ou "Inscreva-se".
-- Uma seção de produtos e/ou serviços oferecidos.
-- Uma área de sobre/contato com um formulário simples (nome, email e mensagem).
-- Ação de botão de chamada para ação (por exemplo, exibir uma mensagem de agradecimento ou redirecionar para outra página, utilizando JS, claro).
-- Escolha uma paleta de cores harmoniosa e fontes apropriadas.
+- Crie uma branche adicional para o desenvolvimento dos novos recursos do projeto;
+- Reestruture a aplicação para que ela seja estruturada através de Grid e Flexbox;
+- Faça com que as transições sejam assíncronas através de: ajax, fetch e promises;
+- Adicione operações CRUD com o LocalStorage;
+- Responsividade completa.
 
-**OBS:** Sem utilização dos display flex e grid e a acão ocorre no botão do formulário após o formulário estar preenchido
+## OPCIONAIS DIFERENCIAIS:
+- Uso de libs como Bootstrap, Tailwind, Angular e afins;
+- Tratativa de erros;
+- Dark mode;
+- Animações (Carousel, por exemplo);
