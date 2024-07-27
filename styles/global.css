@@ -64,6 +64,21 @@
     loop-to-the-side 10s ease-in-out infinite 3s;
 }
 
+.modal {
+  animation-duration: 1s;
+  animation-name: entry;
+}
+
+@keyframes entry {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+
 @keyframes imageinput4 {
   from {
     opacity: 0;
