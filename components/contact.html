@@ -1,0 +1,88 @@
+<h2 class="font-literata text-r-title sm:text-title text-center mb-r-title md:mb-title dark:text-c3">
+    nosso contato<span class="text-v1">.</span>
+</h2>
+
+<div class="flex-row sm:flex">
+    <div
+        class="dark:address-dark rounded-t-[4.0625rem] grid justify-items-center p-5 bg-e1 dark:bg-c2 md:inline-block sm:content-center sm:rounded-none sm:rounded-l-[4.0625rem] md:p-16">
+        <h3 class="text-c3 dark:text-f1 mb-7 sm:mb-[3.75rem] text-lg font-semibold">
+            Suporte Online
+        </h3>
+        <ul class="grid gap-8" title="Endereços">
+            <li class="flex gap-2 ">
+                <i data-feather="map-pin" class="stroke-c3 dark:stroke-f1"></i>
+                <ul>
+                    <li>
+                        <p class="text-c3 dark:text-f1">Rua Ali Perto, 35 Láctea</p>
+                    </li>
+                    <li>
+                        <p class="text-c3 dark:text-f1">Rio de Janeiro - RJ</p>
+                    </li>
+                    <li>
+                        <p class="text-c3 dark:text-f1">Brasil - Terra - Vita</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="flex gap-2">
+                <i data-feather="mail" class="stroke-c3 dark:stroke-f1"></i>
+                <ul>
+                    <li>
+                        <p class="text-c3 dark:text-f1">contato@noivite.com</p>
+                    </li>
+                    <li>
+                        <p class="text-c3 dark:text-f1">suporte@noivite.com</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="flex gap-2">
+                <i data-feather="phone" class="stroke-c3 dark:stroke-f1"></i>
+                <p class="text-c3 dark:text-f1">+55 91 9999-9999</p>
+            </li>
+
+            <ul class="flex gap-8 justify-center" title="Redes sociais">
+                <li>
+                    <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
+                            data-feather="instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
+                            data-feather="facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="hover:stroke-c1 dark:hover:stroke-e1 stroke-c3 dark:stroke-f1"
+                            data-feather="youtube"></i></a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+    <form id="form-contact"
+        class="grid gap-6 rounded-b-[4.0625rem] py-5 px-3 md:py-12 sm:px-11 border-x-4 border-b-4 sm:border-0 sm:border-y-4 sm:border-r-4 border-c3 dark:border-e2 sm:rounded-none sm:rounded-e-[4.0625rem] w-full">
+        <div class="grid lg:grid-cols-2 gap-5 flex-wrap">
+            <fieldset class="grid gap-1 w-full">
+                <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="name">Nome</label>
+                <input class="p-3 rounded-2xl" type="text" name="name" id="name" placeholder="Seu nome" required />
+            </fieldset>
+            <fieldset class="grid gap-1">
+                <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="phone">Telefone</label>
+                <input class="p-3 rounded-2xl" type="tel" name="phone" id="phone" placeholder="(91) 9999-9999" />
+            </fieldset>
+        </div>
+        <fieldset class="grid gap-1">
+            <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="email">Email</label>
+            <input class="p-3 rounded-2xl" type="email" name="email" autocomplete="email" id="email"
+                placeholder="contato@email.com" required />
+        </fieldset>
+        <fieldset class="grid gap-1">
+            <label class="text-f1 font-semibold text-base sm:text-xl dark:text-c3" for="message">Mensagem</label>
+            <textarea class="p-3 rounded-2xl resize-none" name="message" id="message" placeholder="O que você precisa?"
+                rows="4" required></textarea>
+        </fieldset>
+        <button id="form-button"
+            class="inline-block py-4 px-8 bg-e1 text-c3 rounded-full font-semibold hover:bg-e2 hover:cursor-pointer dark:bg-c2 dark:text-f1 dark:hover:bg-c3/70 dark:disabled:bg-c3/70 text-sm md:text-base disabled:bg-e2 disabled:cursor-not-allowed"
+            type="submit" disabled>
+            ENVIAR MENSAGEM
+        </button>
+    </form>
+</div>
