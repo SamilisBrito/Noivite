@@ -8,7 +8,7 @@
 
 > Aprimorar o projeto da atividade 03 com todo o conhecimento adquirido (e prévio, se houver). Faça o seu melhor.
 
-[Click aqui para acessar landing page](https://samilisbrito.github.io/exercicio-3-mais-pra-TI-Landing-page/)
+[Click aqui para acessar landing page](https://samilisbrito.github.io/Noivite/)
 
 ## NOVAS FEATURES (NO MÍNIMO ESSAS):
 
