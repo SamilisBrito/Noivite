@@ -1,4 +1,4 @@
-# Noiviti. Exercício 4 do Curso +praTi e Codifica - Dev Full Stack
+# Noivite.
 
 ![preview](./img/presentation.png)
 
